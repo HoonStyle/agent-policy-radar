@@ -5,14 +5,14 @@
     "url": "https://github.com/HoonStyle"
   },
   "description": "Marketplace for Agent Policy Radar, a Claude/Codex/Pi instruction hygiene review plugin.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "plugins": [
     {
       "name": "agent-policy-radar",
       "source": "./",
       "displayName": "Agent Policy Radar",
       "description": "Review Claude/Codex/Pi instruction hygiene, official guidance changes, and approval-gated policy recommendations.",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "author": {
         "name": "HoonStyle",
         "url": "https://github.com/HoonStyle"
