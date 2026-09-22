@@ -82,6 +82,8 @@ On Windows use `py -3` instead of `python3`. Without `--proposal`, the CLI only 
 
 For ordinary result reports too, inspect the surrounding source sentences and actual loading/application scope of automated candidates relevant to the user's request. Classify them as keep, change candidate, or judgment deferred, with a brief reason. Sentence duplication alone does not justify a change recommendation. If context or scope cannot be confirmed, defer judgment rather than imply a verified issue. Do not expand review to unrelated files or the entire conversation history.
 
+When reporting provider guidance, identify the applicable model, harness or direct API surface and distinguish official advice from locally observed behavior. Do not present Astra-based observations as measured Sol/Luna behavior. Read rolling guides for their current scope; registry labels are dated hints, not permanent proof.
+
 Summarize these files after running:
 
 - `reports/source_changes.json`
@@ -98,7 +100,9 @@ Always preserve this boundary:
 1. Automatic work may fetch public official docs, scan local instruction files, and create reports/recommendations inside `agent-policy-radar`.
 2. Do not edit any target global instruction, project `CLAUDE.md`/`AGENTS.md`, skill, or MCP config unless the user explicitly approves that specific target edit.
 3. If a recommendation concerns another repository, make the edit only in that target repository after approval and after reading that repository's own `CLAUDE.md`/`AGENTS.md`.
-4. If analysis detects conflict or ambiguity, report excerpts and ask for approval/choice; do not auto-resolve.
+4. If analysis detects conflict or ambiguity, report excerpts and ask for approval/choice only where the unresolved decision blocks the next action; do not auto-resolve it. Continue unrelated work already authorized.
+
+Complete requested investigation, analysis and reviewable drafts before waiting for approval of their application. Do not stop at offering a plan when the user already requested that work. If an instruction requires stopping, identify the file and relevant passage, explain its application, and distinguish the explicit restriction from your interpretation. A progress update or announced next step is not completion: report the requested deliverable, performed checks and remaining blockers. This does not expand authorization for risky actions or modify existing approval boundaries.
 
 ## Interpretation rules
 

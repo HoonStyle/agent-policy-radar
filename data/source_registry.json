@@ -1,6 +1,62 @@
 {
   "sources": [
     {
+      "id": "anthropic-release-notes",
+      "label": "Claude Platform release notes (API/platform; not CLI behavior validation)",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview.md",
+      "kind": "release-notes",
+      "cadence": "weekly"
+    },
+    {
+      "id": "claude-opus55-prompting",
+      "label": "Claude Opus 5.5 prompting (model-specific; workload validation required)",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5",
+      "kind": "model-specific-prompting",
+      "cadence": "weekly"
+    },
+    {
+      "id": "claude-opus55-migration",
+      "label": "Claude Opus 5.5 migration (direct API integration)",
+      "url": "https://platform.claude.com/docs/en/models/opus-5-5/migration-guide",
+      "kind": "api-migration",
+      "cadence": "weekly"
+    },
+    {
+      "id": "openai-release-notes",
+      "label": "OpenAI API changelog (API releases; availability differs by host)",
+      "url": "https://developers.openai.com/api/docs/changelog.md",
+      "kind": "release-notes",
+      "cadence": "weekly"
+    },
+    {
+      "id": "openai-latest-model",
+      "label": "OpenAI latest-model guide (rolling; currently GPT-6, prompting observations based on Astra)",
+      "url": "https://developers.openai.com/api/docs/guides/latest-model.md",
+      "kind": "model-prompting",
+      "cadence": "weekly"
+    },
+    {
+      "id": "openai-gpt6-sol",
+      "label": "GPT-6 Sol model reference (API capabilities/parameters)",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-sol.md",
+      "kind": "model-reference",
+      "cadence": "weekly"
+    },
+    {
+      "id": "openai-gpt6-luna",
+      "label": "GPT-6 Luna model reference (API capabilities/parameters)",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-luna.md",
+      "kind": "model-reference",
+      "cadence": "weekly"
+    },
+    {
+      "id": "openai-codex-models",
+      "label": "Codex model availability and selection (client/account dependent)",
+      "url": "https://developers.openai.com/codex/models.md",
+      "kind": "harness-models",
+      "cadence": "weekly"
+    },
+    {
       "id": "claude-code-memory",
       "label": "Claude Code memory / CLAUDE.md and AGENTS.md",
       "url": "https://code.claude.com/docs/en/memory.md",
@@ -37,7 +93,7 @@
     },
     {
       "id": "openai-gpt5-prompting-guide",
-      "label": "OpenAI GPT-5 prompting guide",
+      "label": "Historical reference: OpenAI GPT-5 prompting guide (not current-model guidance)",
       "url": "https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide.md",
       "kind": "model-specific-prompting",
       "cadence": "monthly"
