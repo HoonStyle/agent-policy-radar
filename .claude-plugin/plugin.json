@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "agent-policy-radar",
+  "displayName": "Agent Policy Radar",
+  "version": "0.1.3",
+  "description": "Review Claude/Codex/Pi instruction hygiene, official guidance changes, and approval-gated policy recommendations.",
+  "author": {
+    "name": "HoonStyle",
+    "url": "https://github.com/HoonStyle"
+  },
+  "homepage": "https://github.com/HoonStyle/agent-policy-radar#readme",
+  "repository": "https://github.com/HoonStyle/agent-policy-radar",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "agents-md",
+    "claude-md",
+    "prompt-engineering",
+    "policy"
+  ],
+  "skills": "./skills/"
+}

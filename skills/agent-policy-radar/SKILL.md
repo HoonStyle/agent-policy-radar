@@ -9,10 +9,11 @@ Use this skill as a thin wrapper around the local `agent-policy-radar` CLI. The 
 
 ## Repository and path handling
 
-This skill is packaged with the repository. Resolve paths relative to this `SKILL.md` file, not to a user-specific home directory.
+This skill is packaged with the repository/plugin. Resolve paths relative to this `SKILL.md` file or the host-provided plugin root, not to a user-specific home directory.
 
-- Skill directory: `skills/agent-policy-radar/`
-- Package/repository root: two directories above the skill directory (`../..`)
+- Claude Code plugin root: `${CLAUDE_PLUGIN_ROOT}` when available
+- Skill directory in the package: `skills/agent-policy-radar/`
+- Package/repository root: two directories above the skill directory (`../..`) when no host variable is available
 - CLI entrypoint from the package root: `scripts/policy_radar.py`
 
 Before changing this repository, read `AGENTS.md` from the package/repository root.

@@ -1,0 +1,28 @@
+{
+  "name": "agent-policy-radar",
+  "interface": {
+    "displayName": "Agent Policy Radar"
+  },
+  "plugins": [
+    {
+      "name": "agent-policy-radar",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "interface": {
+        "displayName": "Agent Policy Radar",
+        "shortDescription": "Review agent instruction hygiene and model guidance changes.",
+        "longDescription": "Agent Policy Radar checks official Claude/Codex/Pi guidance sources, inventories local AGENTS.md/CLAUDE.md/skill/MCP instructions, and generates approval-gated recommendations without silently editing policies.",
+        "developerName": "HoonStyle",
+        "category": "Productivity",
+        "capabilities": [
+          "Skills"
+        ],
+        "websiteURL": "https://github.com/HoonStyle/agent-policy-radar",
+        "privacyPolicyURL": "https://github.com/HoonStyle/agent-policy-radar/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/HoonStyle/agent-policy-radar/blob/main/TERMS.md"
+      }
+    }
+  ]
+}

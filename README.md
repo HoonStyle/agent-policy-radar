@@ -39,18 +39,34 @@ agent-policy-radar/
 - Focus on lightweight policy review, not large automatic eval projects.
 - Prefer “proposal → human approval → targeted repo change” over automatic policy rewrites.
 
-## Pi Package
+## Claude / Codex / Pi Distribution
 
-This repo is structured as a Pi package with `package.json` metadata:
+This repo is structured for multiple agent surfaces:
 
-- keyword: `pi-package`
-- skill manifest: `pi.skills = ["skills"]`
-- skill: `agent-policy-radar`
+- **Claude Code plugin**: `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json`
+- **ChatGPT/Codex Agent Plugin**: root `plugin.json`
+- **Codex local/repo marketplace**: `.agents/plugins/marketplace.json`
+- **Pi package**: `package.json` with `pi-package` and `pi.skills = ["skills"]`
+- **Shared skill**: `skills/agent-policy-radar/SKILL.md`
 
-Install from GitHub:
+Claude Code marketplace install from this repo:
 
 ```bash
-pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.2
+claude plugin marketplace add HoonStyle/agent-policy-radar@v0.1.3
+claude plugin install agent-policy-radar@agent-policy-radar
+```
+
+Codex marketplace install from this repo:
+
+```bash
+codex plugin marketplace add HoonStyle/agent-policy-radar@v0.1.3
+codex plugin add agent-policy-radar@agent-policy-radar
+```
+
+Pi install from GitHub:
+
+```bash
+pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.3
 ```
 
 For local development, run this from the checked-out repository root:
@@ -58,6 +74,8 @@ For local development, run this from the checked-out repository root:
 ```bash
 pi install .
 ```
+
+Public Claude/OpenAI directory submission still requires the provider review portals; this repository now contains the manifest and marketplace metadata needed for local/Git marketplace testing and submission preparation.
 
 ## CLI MVP
 

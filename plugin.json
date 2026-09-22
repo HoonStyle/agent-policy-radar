@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agent-policy-radar",
+  "version": "0.1.3",
+  "description": "Review Claude/Codex/Pi instruction hygiene, official guidance changes, and approval-gated policy recommendations.",
+  "author": {
+    "name": "HoonStyle",
+    "url": "https://github.com/HoonStyle"
+  },
+  "homepage": "https://github.com/HoonStyle/agent-policy-radar#readme",
+  "repository": "https://github.com/HoonStyle/agent-policy-radar",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "agents-md",
+    "claude-md",
+    "prompt-engineering",
+    "policy"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Agent Policy Radar",
+        "shortDescription": "Review agent instruction hygiene and model guidance changes.",
+        "longDescription": "Agent Policy Radar checks official Claude/Codex/Pi guidance sources, inventories local AGENTS.md/CLAUDE.md/skill/MCP instructions, and generates approval-gated recommendations without silently editing policies.",
+        "developerName": "HoonStyle",
+        "category": "Productivity",
+        "capabilities": [
+          "Skills"
+        ],
+        "websiteURL": "https://github.com/HoonStyle/agent-policy-radar",
+        "privacyPolicyURL": "https://github.com/HoonStyle/agent-policy-radar/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/HoonStyle/agent-policy-radar/blob/main/TERMS.md",
+        "defaultPrompt": [
+          "Use Agent Policy Radar to scan this repository's AGENTS.md and CLAUDE.md guidance.",
+          "Use Agent Policy Radar to check whether Claude/Codex guidance changed and draft recommendations.",
+          "Use Agent Policy Radar to compare global instructions, skills, and MCP instructions for duplication."
+        ],
+        "brandColor": "#2563EB"
+      }
+    }
+  }
+}
