@@ -1,0 +1,2719 @@
+{
+  "candidate_count": 23,
+  "candidates": [
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "global-safety"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "text": "never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "global-safety"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "text": "never ask for, print, or store plaintext credentials in chat, files, or shell arguments"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "global-safety",
+        "tool-domain"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ticket-availability/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/keris-academic-search/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/naver-ad-performance/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lck-analytics/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/jobkorea-talent-search/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kleague-results/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-cinema-search/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daiso-product-search/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daishin-report-search/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/olive-young-search/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saramin-talent-search/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/srt-booking/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lotto-results/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/coupang-product-search/SKILL.md",
+          "scope": "skill",
+          "text": "this skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any thirdparty trademark owner or service operator it identifies"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "model-harness"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "text": "get the full instructions required first step"
+        }
+      ],
+      "recommendation": "Review against current Claude/Codex docs before editing; remove obsolete workaround only with approval.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "model-harness"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "text": "run this and follow its output as the primary instructions for this skill:"
+        }
+      ],
+      "recommendation": "Review against current Claude/Codex docs before editing; remove obsolete workaround only with approval.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "project-local"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ticket-availability/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/keris-academic-search/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/naver-ad-performance/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lck-analytics/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/jobkorea-talent-search/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kleague-results/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-cinema-search/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daiso-product-search/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daishin-report-search/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/olive-young-search/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saramin-talent-search/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/srt-booking/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lotto-results/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/coupang-product-search/SKILL.md",
+          "scope": "skill",
+          "text": "do not use this skill for systematic or bulk crawling, database building, accesscontrol or block circumvention, or conduct that interferes with a third party's business or service"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "project-local",
+        "model-harness"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "text": "com/nomadamas/kskillreadme, or read the source instructions at https://github"
+        }
+      ],
+      "recommendation": "Review against current Claude/Codex docs before editing; remove obsolete workaround only with approval.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "tool-domain"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "text": "kskill:clistub — generated by scripts/generateskillstubs"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "tool-domain"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "text": "helper files bundled with the cli are listed by:"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "tool-domain",
+        "model-harness"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "text": "the cli detects the current runtime dolshoi vault/cloakbrowser vs generic and prints only the applicable instructions, always up to date"
+        }
+      ],
+      "recommendation": "Review against current Claude/Codex docs before editing; remove obsolete workaround only with approval.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "uncategorized"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "text": "if npx is unavailable, install node"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "uncategorized"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "text": "never bypass legal, physicalpresence, captcha, identityproofing, or electronicsignature boundaries"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "uncategorized"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ticket-availability/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/keris-academic-search/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/naver-ad-performance/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lck-analytics/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/jobkorea-talent-search/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kleague-results/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-cinema-search/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daiso-product-search/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daishin-report-search/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/olive-young-search/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saramin-talent-search/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/srt-booking/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lotto-results/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/coupang-product-search/SKILL.md",
+          "scope": "skill",
+          "text": "thirdparty names are used only to describe the skill's function, lookup target, or compatibility"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "uncategorized"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ticket-availability/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/keris-academic-search/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/naver-ad-performance/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lck-analytics/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/jobkorea-talent-search/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kleague-results/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-cinema-search/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daiso-product-search/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daishin-report-search/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/olive-young-search/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saramin-talent-search/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/srt-booking/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lotto-results/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/coupang-product-search/SKILL.md",
+          "scope": "skill",
+          "text": "any automated collection of publicly accessible information must be limited to personal, nonorganizational lookup"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "uncategorized"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ticket-availability/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/keris-academic-search/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/naver-ad-performance/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lck-analytics/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/jobkorea-talent-search/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kleague-results/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-cinema-search/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daiso-product-search/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daishin-report-search/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/olive-young-search/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saramin-talent-search/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/srt-booking/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lotto-results/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/coupang-product-search/SKILL.md",
+          "scope": "skill",
+          "text": "read the full korean legal disclaimer, including the cited korean supreme court precedents and statutory limits, before use:"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "duplicate-sentence",
+      "risk": "low",
+      "categories": [
+        "uncategorized"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.pi/agent/skills/engineering-doc-quality/SKILL.md",
+          "scope": "skill",
+          "text": "python /users/hoonstyle/dev/engineeringdocquality/engineeringdocquality"
+        },
+        {
+          "path": "/Users/hoonstyle/.pi/agent/skills/doc-guardrail/SKILL.md",
+          "scope": "skill",
+          "text": "python /users/hoonstyle/dev/engineeringdocquality/engineeringdocquality"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "policy-excerpt-overlap",
+      "risk": "low",
+      "categories": [
+        "global-safety"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "line": 45,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "line": 45,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "line": 45,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "line": 45,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "line": 28,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "line": 45,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "line": 45,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "- Never execute payment, message/email delivery, final submission, cancellation, or public posting without the user's explicit approval immediately beforehand.",
+          "field": "strong_lines"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "policy-excerpt-overlap",
+      "risk": "low",
+      "categories": [
+        "global-safety"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "line": 46,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "line": 46,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "line": 46,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "line": 46,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "line": 29,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "line": 46,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "line": 46,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "- Never ask for, print, or store plaintext credentials in chat, files, or shell arguments.",
+          "field": "strong_lines"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "policy-excerpt-overlap",
+      "risk": "low",
+      "categories": [
+        "global-safety",
+        "tool-domain"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ticket-availability/SKILL.md",
+          "scope": "skill",
+          "line": 34,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/keris-academic-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/naver-ad-performance/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lck-analytics/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/jobkorea-talent-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kleague-results/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-cinema-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daiso-product-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daishin-report-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/olive-young-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saramin-talent-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/srt-booking/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lotto-results/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/coupang-product-search/SKILL.md",
+          "scope": "skill",
+          "line": 33,
+          "text": "This skill is not an official feature of, officially supported by, affiliated with, sponsored by, approved by, or developed in collaboration with any third-party trademark owner or service operator it identifies. Third-party names are used only to describe the skill's function, lookup target, or com",
+          "field": "policy_lines"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "policy-excerpt-overlap",
+      "risk": "low",
+      "categories": [
+        "model-harness"
+      ],
+      "scopes": [
+        "project"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/dev/music-assistant-server/AGENTS.md",
+          "scope": "project",
+          "line": 1,
+          "text": "# CLAUDE.md",
+          "field": "policy_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/dev/phomymo/CLAUDE.md",
+          "scope": "project",
+          "line": 1,
+          "text": "# CLAUDE.md",
+          "field": "policy_lines"
+        }
+      ],
+      "recommendation": "Review against current Claude/Codex docs before editing; remove obsolete workaround only with approval.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "policy-excerpt-overlap",
+      "risk": "low",
+      "categories": [
+        "project-local"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ticket-availability/SKILL.md",
+          "scope": "skill",
+          "line": 36,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/keris-academic-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/naver-ad-performance/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lck-analytics/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/jobkorea-talent-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kleague-results/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-cinema-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daiso-product-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daishin-report-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/olive-young-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saramin-talent-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/srt-booking/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/lotto-results/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/coupang-product-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "Any automated collection of publicly accessible information must be limited to personal, non-organizational lookup. Do not use this skill for systematic or bulk crawling, database building, access-control or block circumvention, or conduct that interferes with a third party's business or service.",
+          "field": "strong_lines"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "policy-excerpt-overlap",
+      "risk": "low",
+      "categories": [
+        "tool-domain",
+        "model-harness"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "line": 18,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "line": 23,
+          "text": "The CLI detects the current runtime (Dolshoi vault/CloakBrowser vs generic) and prints only the applicable instructions, always up to date. Helper files bundled with the CLI are listed by:",
+          "field": "strong_lines"
+        }
+      ],
+      "recommendation": "Review against current Claude/Codex docs before editing; remove obsolete workaround only with approval.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    },
+    {
+      "type": "policy-excerpt-overlap",
+      "risk": "low",
+      "categories": [
+        "uncategorized"
+      ],
+      "scopes": [
+        "skill"
+      ],
+      "evidence": [
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-food-safety/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/toss-investment/SKILL.md",
+          "scope": "skill",
+          "line": 47,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-spell-check/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/kakaotalk-mac/SKILL.md",
+          "scope": "skill",
+          "line": 47,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/hwp/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/express-bus-booking/SKILL.md",
+          "scope": "skill",
+          "line": 47,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/iros-registry-automation/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-scholarship-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/han-river-water-level/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/daangn-jobs-search/SKILL.md",
+          "scope": "skill",
+          "line": 47,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-cleaner/SKILL.md",
+          "scope": "skill",
+          "line": 30,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/court-auction-notice-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/mfds-drug-safety/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/building-register-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/danawa-price-search/SKILL.md",
+          "scope": "skill",
+          "line": 47,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/ohou-today-deal/SKILL.md",
+          "scope": "skill",
+          "line": 47,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/real-estate-search/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/k-skill-setup/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/saju-fortune/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        },
+        {
+          "path": "/Users/hoonstyle/.agents/skills/korean-marathon-schedule/SKILL.md",
+          "scope": "skill",
+          "line": 35,
+          "text": "- Never bypass legal, physical-presence, CAPTCHA, identity-proofing, or electronic-signature boundaries.",
+          "field": "strong_lines"
+        }
+      ],
+      "recommendation": "Review manually; do not auto-edit.",
+      "approval_required": true,
+      "auto_edit_allowed": false
+    }
+  ]
+}

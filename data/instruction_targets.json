@@ -1,0 +1,40 @@
+{
+  "targets": [
+    {
+      "id": "pi-global-agents",
+      "scope": "global",
+      "path": "~/.pi/agent/AGENTS.md"
+    },
+    {
+      "id": "agent-policy-radar-project",
+      "scope": "project",
+      "path": "./AGENTS.md"
+    }
+  ],
+  "globs": [
+    {
+      "scope": "project",
+      "pattern": "~/dev/*/AGENTS.md"
+    },
+    {
+      "scope": "project",
+      "pattern": "~/dev/*/CLAUDE.md"
+    },
+    {
+      "scope": "skill",
+      "pattern": "~/.pi/agent/skills/*/SKILL.md"
+    },
+    {
+      "scope": "telegram-skill",
+      "pattern": "~/.pi/agent/npm/node_modules/@llblab/pi-telegram/dist/skills/*/SKILL.md"
+    },
+    {
+      "scope": "mcp",
+      "pattern": "~/.config/*mcp*/*"
+    },
+    {
+      "scope": "mcp",
+      "pattern": "~/.claude*/*mcp*"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "sources": {
+    "claude-code-memory": {
+      "id": "claude-code-memory",
+      "label": "Claude Code memory / CLAUDE.md and AGENTS.md",
+      "url": "https://code.claude.com/docs/en/memory.md",
+      "kind": "harness-instructions",
+      "cadence": "weekly",
+      "sha256": "3f1ce8c9c92877e67cf44cf9cf68ae5480976fae3b1b5bfa5d629a04e0984803",
+      "etag": null,
+      "last_modified": "Tue, 22 Sep 2026 00:39:09 GMT",
+      "content_type": "text/markdown; charset=utf-8",
+      "last_checked_at": "2026-09-22T09:39:09+09:00",
+      "snapshot": "data/snapshots/claude-code-memory.txt",
+      "keyword_hits": [
+        "AGENTS.md",
+        "CLAUDE.md",
+        "Claude Code",
+        "MCP",
+        "instruction",
+        "instructions",
+        "prompt",
+        "tool",
+        "tools"
+      ]
+    },
+    "claude-code-settings": {
+      "id": "claude-code-settings",
+      "label": "Claude Code settings and system prompt notes",
+      "url": "https://code.claude.com/docs/en/settings.md",
+      "kind": "harness-settings",
+      "cadence": "weekly",
+      "sha256": "0c04e7ff63e094a5b8048220baaac1f3cd05e2df9f9a5ac92027ab0ad85f9058",
+      "etag": null,
+      "last_modified": "Tue, 22 Sep 2026 00:39:10 GMT",
+      "content_type": "text/markdown; charset=utf-8",
+      "last_checked_at": "2026-09-22T09:39:09+09:00",
+      "snapshot": "data/snapshots/claude-code-settings.txt",
+      "keyword_hits": [
+        "CLAUDE.md",
+        "Claude Code",
+        "MCP",
+        "instruction",
+        "instructions",
+        "model",
+        "prompt",
+        "tool",
+        "tools"
+      ]
+    },
+    "anthropic-prompt-engineering-overview": {
+      "id": "anthropic-prompt-engineering-overview",
+      "label": "Anthropic prompt engineering overview",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+      "kind": "model-prompting",
+      "cadence": "monthly",
+      "sha256": "8902cb4ca34ea2332cf7e0bdb0b157205d3ca86ba71231c3dd2f4c2116e4d101",
+      "etag": null,
+      "last_modified": null,
+      "content_type": "text/html; charset=utf-8",
+      "last_checked_at": "2026-09-22T09:39:09+09:00",
+      "snapshot": "data/snapshots/anthropic-prompt-engineering-overview.txt",
+      "keyword_hits": [
+        "model",
+        "prompt"
+      ]
+    },
+    "openai-prompt-engineering": {
+      "id": "openai-prompt-engineering",
+      "label": "OpenAI prompt engineering guide",
+      "url": "https://developers.openai.com/api/docs/guides/prompt-engineering.md",
+      "kind": "model-prompting",
+      "cadence": "weekly",
+      "sha256": "90bea89e19f815a0edd65165e3e28aa7d14978432ba973f02068505b3312e852",
+      "etag": "\"5ef4dd9614a173e88321fbbe1536a54c\"",
+      "last_modified": "Tue, 22 Sep 2026 00:25:25 GMT",
+      "content_type": "text/markdown; charset=utf-8",
+      "last_checked_at": "2026-09-22T09:39:09+09:00",
+      "snapshot": "data/snapshots/openai-prompt-engineering.txt",
+      "keyword_hits": [
+        "instruction",
+        "instructions",
+        "model",
+        "prompt",
+        "reasoning",
+        "tool",
+        "tools"
+      ]
+    },
+    "openai-codex-cli": {
+      "id": "openai-codex-cli",
+      "label": "OpenAI Codex CLI documentation",
+      "url": "https://developers.openai.com/codex/cli.md",
+      "kind": "harness-instructions",
+      "cadence": "weekly",
+      "sha256": "324d08847b3bd00152e0df871dec97749fcd21613298acc299f0f3e3dfc36662",
+      "etag": null,
+      "last_modified": null,
+      "content_type": "text/markdown; charset=utf-8",
+      "last_checked_at": "2026-09-22T09:39:09+09:00",
+      "snapshot": "data/snapshots/openai-codex-cli.txt",
+      "keyword_hits": [
+        "Codex",
+        "MCP",
+        "instruction",
+        "instructions",
+        "model",
+        "prompt",
+        "reasoning",
+        "tool",
+        "tools"
+      ]
+    },
+    "openai-gpt5-prompting-guide": {
+      "id": "openai-gpt5-prompting-guide",
+      "label": "OpenAI GPT-5 prompting guide",
+      "url": "https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide.md",
+      "kind": "model-specific-prompting",
+      "cadence": "monthly",
+      "sha256": "0f03316b5b515952de9ec16b8be5ba827bab41bd43a7d2af213ccd0981160f4c",
+      "etag": "\"d2d42eb58ff5fe1207687d04d8494776\"",
+      "last_modified": "Tue, 22 Sep 2026 00:25:25 GMT",
+      "content_type": "text/markdown; charset=utf-8",
+      "last_checked_at": "2026-09-22T09:39:09+09:00",
+      "snapshot": "data/snapshots/openai-gpt5-prompting-guide.txt",
+      "keyword_hits": [
+        "instruction",
+        "instructions",
+        "model",
+        "prompt",
+        "reasoning",
+        "tool",
+        "tools"
+      ]
+    },
+    "mcp-prompts-spec": {
+      "id": "mcp-prompts-spec",
+      "label": "MCP prompts specification",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/prompts",
+      "kind": "mcp",
+      "cadence": "monthly",
+      "sha256": "60a9a5c30f863209d7d0ac1418fa74ff6fd5588363c25cfe343bed0f9612f810",
+      "etag": null,
+      "last_modified": null,
+      "content_type": "text/html; charset=utf-8",
+      "last_checked_at": "2026-09-22T09:39:09+09:00",
+      "snapshot": "data/snapshots/mcp-prompts-spec.txt",
+      "keyword_hits": [
+        "MCP",
+        "instruction",
+        "instructions",
+        "model",
+        "prompt",
+        "tool",
+        "tools"
+      ]
+    },
+    "mcp-tools-spec": {
+      "id": "mcp-tools-spec",
+      "label": "MCP tools specification",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+      "kind": "mcp",
+      "cadence": "monthly",
+      "sha256": "f7a7e2daa30bac3c8611cb345c031f661e9c71c7bc884f61f59c4e75d94a4e0c",
+      "etag": null,
+      "last_modified": null,
+      "content_type": "text/html; charset=utf-8",
+      "last_checked_at": "2026-09-22T09:39:09+09:00",
+      "snapshot": "data/snapshots/mcp-tools-spec.txt",
+      "keyword_hits": [
+        "MCP",
+        "model",
+        "prompt",
+        "tool",
+        "tools"
+      ]
+    }
+  }
+}

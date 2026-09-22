@@ -1,0 +1,60 @@
+{
+  "sources": [
+    {
+      "id": "claude-code-memory",
+      "label": "Claude Code memory / CLAUDE.md and AGENTS.md",
+      "url": "https://code.claude.com/docs/en/memory.md",
+      "kind": "harness-instructions",
+      "cadence": "weekly"
+    },
+    {
+      "id": "claude-code-settings",
+      "label": "Claude Code settings and system prompt notes",
+      "url": "https://code.claude.com/docs/en/settings.md",
+      "kind": "harness-settings",
+      "cadence": "weekly"
+    },
+    {
+      "id": "anthropic-prompt-engineering-overview",
+      "label": "Anthropic prompt engineering overview",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+      "kind": "model-prompting",
+      "cadence": "monthly"
+    },
+    {
+      "id": "openai-prompt-engineering",
+      "label": "OpenAI prompt engineering guide",
+      "url": "https://developers.openai.com/api/docs/guides/prompt-engineering.md",
+      "kind": "model-prompting",
+      "cadence": "weekly"
+    },
+    {
+      "id": "openai-codex-cli",
+      "label": "OpenAI Codex CLI documentation",
+      "url": "https://developers.openai.com/codex/cli.md",
+      "kind": "harness-instructions",
+      "cadence": "weekly"
+    },
+    {
+      "id": "openai-gpt5-prompting-guide",
+      "label": "OpenAI GPT-5 prompting guide",
+      "url": "https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide.md",
+      "kind": "model-specific-prompting",
+      "cadence": "monthly"
+    },
+    {
+      "id": "mcp-prompts-spec",
+      "label": "MCP prompts specification",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/prompts",
+      "kind": "mcp",
+      "cadence": "monthly"
+    },
+    {
+      "id": "mcp-tools-spec",
+      "label": "MCP tools specification",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+      "kind": "mcp",
+      "cadence": "monthly"
+    }
+  ]
+}
