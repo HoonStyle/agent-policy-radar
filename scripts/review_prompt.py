@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a local, immutable prompt-review bundle; never apply a patch."""
+"""Create a unique local prompt-review bundle; never apply a patch."""
 import argparse
 import datetime as dt
 import difflib
@@ -34,6 +34,7 @@ def draft(text):
         if not fence and repeat:
             protected = bool(SAFETY.search(line))
             decisions.append({'line': number, 'action': 'keep' if protected else 'delete',
+                              'original_text': line, 'duplicate_of_line': number - 1,
                               'reason': 'safety-related repetition retained' if protected else 'adjacent identical bullet; review before applying'})
             if not protected:
                 continue
@@ -65,6 +66,10 @@ def review(target, output, proposal=None):
     folder.mkdir(parents=True, mode=0o700, exist_ok=False)
     artifacts = {'proposed.md': suggested.encode('utf-8'), 'changes.diff': ''.join(changes).encode('utf-8')}
     manifest = {'schema_version': 1, 'review_id': run, 'mode': mode, 'target': str(target),
+                'created_at': dt.datetime.now(dt.timezone.utc).isoformat(),
+                'proposal_source': str(Path(proposal).expanduser().resolve()) if proposal else None,
+                'original_bytes': len(raw), 'proposed_bytes': len(artifacts['proposed.md']),
+                'changed': raw != artifacts['proposed.md'],
                 'original_sha256': digest(raw), 'proposed_sha256': digest(artifacts['proposed.md']),
                 'patch_sha256': digest(artifacts['changes.diff']), 'status': 'pending-review',
                 'approval': None, 'applied': False, 'decisions': decisions,

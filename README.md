@@ -17,7 +17,10 @@ It is not a benchmark suite by default. It is an operational note and review lay
 
 - [CHANGELOG.md](CHANGELOG.md): release changes, reasons, commit evidence, verification limits.
 - [Audit trail proposal](recommendations/audit-trail.md): planned per-run records and approval/application evidence.
-- Legacy scan reports are overwritten on rerun. The new `review` command preserves per-review bundles; full scan/approval/application auditing is **not implemented yet**.
+- Unified CLI executions now record start/end UTC times, duration, command arguments, runtime/version, implementation/config hashes, exit status and exceptions under `~/.agent-policy-radar/audit/`.
+- Before/after report, source snapshot and recommendation contents are preserved as local hash-addressed blobs even when the normal output is overwritten. Unchanged artifacts are labeled, not claimed as newly generated.
+- These records can contain private paths and excerpts. They are not uploaded automatically, are not tamper-proof, and have no automatic retention cleanup. POSIX permissions do not replace Windows ACLs.
+- Direct execution of individual scripts bypasses the unified execution audit. Review/discovery bundles retain their separate records; approval/application linkage is still incomplete. A hard-killed run may have only `started.json`; this is not success.
 
 ## Core Principle
 

@@ -165,7 +165,7 @@ def main() -> int:
 
     print(f"checked {len(registry.get('sources', []))} sources; changes/errors: {len(changes)}")
     print(f"report: {REPORT.relative_to(ROOT)}")
-    return 0
+    return 1 if any(not item.get("ok", False) for item in changes) else 0
 
 
 if __name__ == "__main__":

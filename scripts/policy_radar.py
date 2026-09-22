@@ -61,4 +61,5 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    from audit import execute
+    raise SystemExit(execute(sys.argv[1:], main))
