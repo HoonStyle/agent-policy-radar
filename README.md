@@ -83,7 +83,7 @@ codex plugin marketplace upgrade agent-policy-radar
 codex plugin add agent-policy-radar@agent-policy-radar
 ```
 
-Existing tag-pinned users must first remove and re-add this marketplace using the commands above, then reinstall the plugin. Removing the marketplace can uninstall its plugins; this catalog currently contains only Agent Policy Radar.
+Existing tag-pinned users must first remove and re-add this marketplace using the commands above, then reinstall the plugin. Removing the marketplace can uninstall its plugins, including any optional plugins you installed. Prefer marketplace update/upgrade when tracking `main`.
 
 Pi install from GitHub:
 
@@ -98,6 +98,23 @@ pi install .
 ```
 
 Public Claude/OpenAI directory submission still requires the provider review portals; this repository now contains the manifest and marketplace metadata needed for local/Git marketplace testing and submission preparation.
+
+## Optional Review Workflow plugin
+
+`review-workflow` is a separate skill-only plugin in this marketplace. It is not a dependency of Policy Radar and is not in the default root `skills/` directory. Installing/updating Policy Radar alone does not enable it. No global instruction edits, hooks, background jobs, or automatic code fixes are added.
+
+Install only if wanted (after registering the marketplace above):
+
+```bash
+claude plugin marketplace update agent-policy-radar
+claude plugin install review-workflow@agent-policy-radar
+codex plugin marketplace upgrade agent-policy-radar
+codex plugin add review-workflow@agent-policy-radar
+```
+
+In Claude invoke `/review-workflow:review-workflow`; in Codex explicitly request the Review Workflow skill after starting a new session. The procedure records a stable baseline and finding IDs, separates defects/investigation/improvements, checks minimal fixes and regressions, and defines an evidence-based stopping criterion. It asks for an appropriate project-local ledger location before writing; review-only requests do not authorize fixes.
+
+The template is bundled under `plugins/review-workflow/skills/review-workflow/references/ledger-template.md`. This is a procedural skill with a manually maintained ledger, not an enforced approval engine or a guarantee of reviewer accuracy. Its version is independent of Policy Radar.
 
 ## Discover new official guidance
 

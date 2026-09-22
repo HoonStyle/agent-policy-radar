@@ -1,0 +1,8 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "review-workflow",
+  "version": "0.1.0",
+  "description": "Optional evidence-based code review, finding ledger, and fix verification workflow.",
+  "author": {"name": "HoonStyle"},
+  "license": "MIT"
+}

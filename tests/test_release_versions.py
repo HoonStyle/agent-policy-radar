@@ -16,7 +16,24 @@ class ReleaseVersionsTest(unittest.TestCase):
         market = load('.claude-plugin/marketplace.json')
         self.assertEqual(market['version'], version)
         for plugin in market['plugins']:
-            self.assertEqual(plugin['version'], version)
+            base = ROOT / plugin['source']
+            manifest = json.loads((base / '.claude-plugin/plugin.json').read_text(encoding='utf-8'))
+            portable = json.loads((base / 'plugin.json').read_text(encoding='utf-8'))
+            self.assertEqual(manifest['version'], portable['version'])
+            if 'version' in plugin:
+                self.assertEqual(plugin['version'], manifest['version'])
+
+    def test_review_is_separate(self):
+        skill = 'review-workflow'
+        self.assertFalse((ROOT / 'skills' / skill).exists())
+        self.assertTrue((ROOT / 'plugins' / skill / 'skills' / skill / 'SKILL.md').is_file())
+        for file in ('.claude-plugin/plugin.json', 'plugin.json'):
+            data = json.loads((ROOT / file).read_text(encoding='utf-8'))
+            self.assertNotIn('dependencies', data)
+        codex = json.loads((ROOT / '.agents/plugins/marketplace.json').read_text(encoding='utf-8'))
+        entries = [p for p in codex['plugins'] if p['name'] == skill]
+        self.assertEqual(len(entries), 1)
+        self.assertEqual(entries[0]['source']['path'], './plugins/review-workflow')
 
 
 if __name__ == '__main__':

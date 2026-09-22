@@ -37,6 +37,7 @@
     "data/instruction_targets.json",
     "scripts/*.py",
     "skills/**",
+    "plugins/review-workflow/**",
     "sources/**",
     "findings/**",
     "recommendations/policy-radar-automation-plan.md"

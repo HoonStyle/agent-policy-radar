@@ -8,6 +8,11 @@
   "version": "0.1.5",
   "plugins": [
     {
+      "name": "review-workflow",
+      "source": "./plugins/review-workflow",
+      "description": "Optional structured review and fix-verification workflow; install separately."
+    },
+    {
       "name": "agent-policy-radar",
       "source": "./",
       "displayName": "Agent Policy Radar",

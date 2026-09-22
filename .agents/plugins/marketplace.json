@@ -5,6 +5,14 @@
   },
   "plugins": [
     {
+      "name": "review-workflow",
+      "source": {"source": "local", "path": "./plugins/review-workflow"},
+      "interface": {
+        "displayName": "Review Workflow (Optional)",
+        "shortDescription": "Evidence-based reviews, finding ledger, and fix verification."
+      }
+    },
+    {
       "name": "agent-policy-radar",
       "source": {
         "source": "local",
