@@ -60,6 +60,10 @@ py -3 scripts\policy_radar.py overlap
 py -3 scripts\policy_radar.py recommend
 ```
 
+## Discover newly published guidance
+
+For requests about new models or newly available guidance, run `python3 scripts/policy_radar.py discover` from the package root (`py -3` on Windows). Read the returned local report. It finds candidate links in official indexes, not verified recommendations. First-seen does not mean newly published. Review relevant candidate pages and their dates before proposing source-registry changes or prompt edits. Index failures must be reported, not interpreted as no changes. This command is separate from `all`; there is no scheduler.
+
 ## Prompt cleanup (explicit request)
 
 For cleanup requests, do not stop at an overlap count. Read the explicitly selected instruction files locally. Identify which harness actually loads each file; if authority or loading is unknown, ask rather than infer priority from directory depth.

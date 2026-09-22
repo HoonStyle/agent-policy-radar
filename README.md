@@ -96,6 +96,16 @@ pi install .
 
 Public Claude/OpenAI directory submission still requires the provider review portals; this repository now contains the manifest and marketplace metadata needed for local/Git marketplace testing and submission preparation.
 
+## Discover new official guidance
+
+```bash
+python3 scripts/policy_radar.py discover
+```
+
+Fetches four official `llms.txt` indexes (Claude Code, Anthropic platform, OpenAI developers, ChatGPT Learn) and extracts prompting/model/migration/instruction/release/changelog links. Only HTTPS links and redirects to explicitly allowed official hosts are accepted. Requests have timeouts and size limits, without retries or recursive crawling.
+
+Reports are preserved per run in `~/.agent-policy-radar/discovery/`. First-seen URLs are not necessarily new publications. Candidates require original-page review; discovery does not fetch their bodies, change the source registry, or edit instructions. Failures are recorded and return a nonzero status. `discover` is currently an explicit separate command, not part of `all` or a scheduled job.
+
 ## Prompt cleanup review
 
 ```bash

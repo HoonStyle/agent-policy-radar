@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PY = sys.executable or "python3"
 
 COMMANDS = {
+    "discover": ["scripts/discover_sources.py"],
     "sources": ["scripts/check_sources.py", "--no-note"],
     "scan": ["scripts/scan_instructions.py"],
     "overlap": ["scripts/analyze_overlap.py"],
@@ -30,6 +31,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Policy Radar automation runner")
     sub = ap.add_subparsers(dest="command", required=True)
 
+    sub.add_parser("discover", help="Find new guidance candidates in official documentation indexes")
     sub.add_parser("sources", help="Check official source docs for changes")
     sub.add_parser("scan", help="Inventory instruction files")
     sub.add_parser("overlap", help="Analyze overlaps from the inventory report")
