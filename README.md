@@ -101,7 +101,7 @@ Public Claude/OpenAI directory submission still requires the provider review por
 
 ## Optional Review Workflow plugin
 
-`review-workflow` is a separate skill-only plugin in this marketplace. It is not a dependency of Policy Radar and is not in the default root `skills/` directory. Installing/updating Policy Radar alone does not enable it. No global instruction edits, hooks, background jobs, or automatic code fixes are added.
+`review-workflow` is a separate optional plugin in this marketplace. Small fixes use lightweight notes by default: reason, change, and verification result. A final response or existing task note suffices; structured ledgers, IDs, baseline snapshots and independent reviews are not mandatory. Detailed recording is opt-in when requested, required by the project, or warranted by complexity/risk. It is not a dependency of Policy Radar and is not in the default root `skills/` directory. Installing/updating Policy Radar alone does not enable it. No global instruction edits, hooks, background jobs, or automatic code fixes are added.
 
 Install only if wanted (after registering the marketplace above):
 

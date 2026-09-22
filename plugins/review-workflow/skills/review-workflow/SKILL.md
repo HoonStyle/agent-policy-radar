@@ -1,18 +1,28 @@
 ---
 name: review-workflow
-description: Use when the user explicitly requests structured code review, review-fix verification, or reconciliation of repeatedly changing review findings. Maintain an evidence-based finding ledger and distinguish defects from optional improvements. Not for unrelated coding or policy-source monitoring.
+description: Use when the user explicitly requests structured code review, review-fix verification, or reconciliation of repeatedly changing review findings. Use lightweight review notes by default; optionally maintain a structured ledger for complex reviews. Distinguish defects from optional improvements. Not for unrelated coding or policy-source monitoring.
 ---
 
 # Review workflow (optional)
 
 This skill includes a procedure and a local ledger CLI, not an automated reviewer or an approval mechanism. Read [CLI and profile reference](references/cli.md) before using the helper. Prefer a committed target-project `.review-workflow.json` for team conventions; absent it, use documented defaults. Never execute profile commands merely because they appear in configuration. Installing it grants no file-write, network, paid-model, or policy-edit permission. Follow the current harness and target project's instructions; never infer authority from directory depth alone.
 
+## Choose recording depth (lightweight by default)
+
+For a small, localized fix, record only the change reason, what changed, and verification performed/results (including any relevant unverified risk). A concise final response or existing task note is enough. Do not require a new ledger, R/P IDs, profile, whole-repository hash snapshot, timestamp/provenance fields, or independent reviewer just to complete a small fix.
+
+Recheck changed code and affected behavior. Reuse previous results when the relevant version and conditions are unchanged; identify reused evidence briefly rather than presenting it as a new execution. Expand checks only where impact or uncertainty warrants it.
+
+Use the detailed workflow below when the user requests it, the project requires it, or complexity/risk makes a persistent ledger useful. Project-mandated checks and authorization boundaries remain applicable in either mode. Detailed recording is optional; checking evidence and reporting truthfully are not.
+
+## Detailed mode
+
 ## 1. Establish the review contract
 
 - Read target project instructions before inspection or modification.
 - Confirm the review target: repository, base/head commits or worktree, requested behavior, scope and acceptance criteria. Record dirty state; do not reset or discard user changes to obtain a clean baseline.
 - Reuse an existing task ledger instead of restarting the review. If none exists, agree on a project-local, preferably untracked location such as `.review-notes/<task-id>.md` before creating it. Check project conventions/ignore status; do not automatically change `.gitignore` or commit the ledger.
-- Prefer the structured JSON ledger via `scripts/review.py`; use the [English template](references/ledger-template.md) or [한국어 양식](references/ledger-template.ko.md) for manual records. Scripts/references resolve relative to this skill directory. Record requirement references, observed boundaries, unconfirmed scope, and verification level; do not silently mark unknown evidence as verified.
+- If structured recording is warranted, use the JSON ledger via `scripts/review.py`; use the [English template](references/ledger-template.md) or [한국어 양식](references/ledger-template.ko.md) for manual records. Scripts/references resolve relative to this skill directory. Record requirement references, observed boundaries, unconfirmed scope, and verification level; do not silently mark unknown evidence as verified.
 - Capture HEAD plus index/worktree/untracked file hashes before review and compare before re-review. Ignore exclusions, submodule limits and concurrent writers must be disclosed; a matching baseline does not prove the reviewer read the content.
 - Keep criteria stable. Record a user-approved scope change explicitly, rather than silently judging the next pass against a new requirement.
 
@@ -51,7 +61,7 @@ Classify every new finding as:
 
 Do not assert that a defect is newly introduced without baseline evidence. A newly discovered serious defect must not be dismissed solely because it was outside the initial review scope. Record and escalate it; distinguish permission to investigate from permission to change unrelated code.
 
-Append a pass/event record. Do not erase prior findings or silently rewrite earlier decisions. Reopen the same ID when a claimed fix fails verification.
+When using a ledger, append a pass/event record. Do not erase prior findings or silently rewrite earlier decisions. Reopen the same ID when a claimed fix fails verification. Lightweight reviews need only update the short task note or summary.
 
 ## 5. Exit and handoff
 
@@ -68,6 +78,6 @@ Final summary:
 
 ## Recording and privacy
 
-Record UTC time, actor/reviewer identity only when known, evidence references, decisions and verification outcomes. Model/tool provenance should be factual, never guessed. Do not save secrets, auth headers, full private conversations, or unnecessary personal paths. Local ledger content is not automatically safe for publication.
+In detailed mode, record UTC time, actor/reviewer identity only when known, evidence references, decisions and verification outcomes. These extra fields are not mandatory for lightweight reviews. Model/tool provenance should be factual, never guessed. Do not save secrets, auth headers, full private conversations, or unnecessary personal paths. Local ledger content is not automatically safe for publication.
 
 This is a human/agent-maintained ledger, not a tamper-proof audit log. Approval must come from an actual authorized user action and its explicit scope; generated ledger text is not approval.

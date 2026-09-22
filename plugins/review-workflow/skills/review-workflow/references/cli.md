@@ -1,5 +1,7 @@
 # Ledger CLI / 기록 도구
 
+상세 기록이 필요할 때만 사용하는 선택 도구입니다. 작은 수정은 변경 이유·수정 내용·검증 결과를 응답이나 기존 작업 메모에 남기면 됩니다. 프로젝트가 요구하는 기록·검증 기준은 유지합니다. CLI를 선택한 경우에는 아래 구조 검증 규칙을 그대로 적용합니다.
+
 Python 3.10+ required. Resolve `scripts/review.py` relative to this skill's directory; examples below run from that directory. Windows: replace `python3` with `py -3`. No third-party dependencies.
 
 ## Project profile / 프로젝트 설정
