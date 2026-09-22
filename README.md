@@ -39,6 +39,26 @@ agent-policy-radar/
 - Focus on lightweight policy review, not large automatic eval projects.
 - Prefer “proposal → human approval → targeted repo change” over automatic policy rewrites.
 
+## Pi Package
+
+This repo is structured as a Pi package with `package.json` metadata:
+
+- keyword: `pi-package`
+- skill manifest: `pi.skills = ["skills"]`
+- skill: `agent-policy-radar`
+
+Install from GitHub:
+
+```bash
+pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.1
+```
+
+For local development:
+
+```bash
+pi install /Users/hoonstyle/dev/agent-policy-radar
+```
+
 ## CLI MVP
 
 Run from the repository root:

@@ -1,0 +1,46 @@
+{
+  "name": "agent-policy-radar",
+  "version": "0.1.1",
+  "description": "Pi skill and CLI for reviewing Claude/Codex/Pi instruction hygiene, source guidance changes, and approval-gated policy recommendations.",
+  "license": "MIT",
+  "type": "module",
+  "private": false,
+  "keywords": [
+    "pi-package",
+    "pi-skill",
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "agents-md",
+    "claude-md",
+    "prompt-engineering",
+    "policy"
+  ],
+  "homepage": "https://github.com/HoonStyle/agent-policy-radar#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoonStyle/agent-policy-radar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HoonStyle/agent-policy-radar/issues"
+  },
+  "files": [
+    "README.md",
+    "AGENTS.md",
+    "data/source_registry.json",
+    "data/instruction_targets.json",
+    "scripts/*.py",
+    "skills/**",
+    "sources/**",
+    "findings/**",
+    "recommendations/policy-radar-automation-plan.md"
+  ],
+  "pi": {
+    "skills": [
+      "skills"
+    ]
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
