@@ -50,30 +50,47 @@ This repo is structured as a Pi package with `package.json` metadata:
 Install from GitHub:
 
 ```bash
-pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.1
+pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.2
 ```
 
-For local development:
+For local development, run this from the checked-out repository root:
 
 ```bash
-pi install /Users/hoonstyle/dev/agent-policy-radar
+pi install .
 ```
 
 ## CLI MVP
 
 Run from the repository root:
 
+macOS/Linux:
+
 ```bash
 python3 scripts/policy_radar.py all
 ```
 
-Equivalent individual commands:
+Windows PowerShell:
+
+```powershell
+py -3 scripts\policy_radar.py all
+```
+
+Equivalent individual commands on macOS/Linux:
 
 ```bash
 python3 scripts/check_sources.py --no-note
 python3 scripts/scan_instructions.py
 python3 scripts/analyze_overlap.py
 python3 scripts/generate_recommendations.py
+```
+
+On Windows, use `py -3` and backslash paths, for example:
+
+```powershell
+py -3 scripts\check_sources.py --no-note
+py -3 scripts\scan_instructions.py
+py -3 scripts\analyze_overlap.py
+py -3 scripts\generate_recommendations.py
 ```
 
 Outputs:
@@ -89,8 +106,4 @@ A Pi skill wrapper source is tracked at:
 
 `skills/agent-policy-radar/SKILL.md`
 
-The current machine also has it installed globally at:
-
-`~/.pi/agent/skills/agent-policy-radar/SKILL.md`
-
-It delegates to this CLI and preserves the same approval gate.
+It delegates to this CLI and preserves the same approval gate. The skill uses package-relative paths; it should not depend on `/Users/...` or other machine-specific locations.

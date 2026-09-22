@@ -1,9 +1,14 @@
 {
   "targets": [
     {
-      "id": "pi-global-agents",
+      "id": "pi-global-agents-posix",
       "scope": "global",
       "path": "~/.pi/agent/AGENTS.md"
+    },
+    {
+      "id": "pi-global-agents-windows",
+      "scope": "global",
+      "path": "%USERPROFILE%/.pi/agent/AGENTS.md"
     },
     {
       "id": "agent-policy-radar-project",
@@ -21,12 +26,44 @@
       "pattern": "~/dev/*/CLAUDE.md"
     },
     {
+      "scope": "project",
+      "pattern": "%USERPROFILE%/dev/*/AGENTS.md"
+    },
+    {
+      "scope": "project",
+      "pattern": "%USERPROFILE%/dev/*/CLAUDE.md"
+    },
+    {
+      "scope": "project",
+      "pattern": "%USERPROFILE%/Documents/dev/*/AGENTS.md"
+    },
+    {
+      "scope": "project",
+      "pattern": "%USERPROFILE%/Documents/dev/*/CLAUDE.md"
+    },
+    {
       "scope": "skill",
       "pattern": "~/.pi/agent/skills/*/SKILL.md"
     },
     {
+      "scope": "skill",
+      "pattern": "~/.agents/skills/*/SKILL.md"
+    },
+    {
+      "scope": "skill",
+      "pattern": "%USERPROFILE%/.pi/agent/skills/*/SKILL.md"
+    },
+    {
+      "scope": "skill",
+      "pattern": "%USERPROFILE%/.agents/skills/*/SKILL.md"
+    },
+    {
       "scope": "telegram-skill",
       "pattern": "~/.pi/agent/npm/node_modules/@llblab/pi-telegram/dist/skills/*/SKILL.md"
+    },
+    {
+      "scope": "telegram-skill",
+      "pattern": "%USERPROFILE%/.pi/agent/npm/node_modules/@llblab/pi-telegram/dist/skills/*/SKILL.md"
     },
     {
       "scope": "mcp",
@@ -35,6 +72,14 @@
     {
       "scope": "mcp",
       "pattern": "~/.claude*/*mcp*"
+    },
+    {
+      "scope": "mcp",
+      "pattern": "%APPDATA%/*mcp*/*"
+    },
+    {
+      "scope": "mcp",
+      "pattern": "%USERPROFILE%/.claude*/*mcp*"
     }
   ]
 }
