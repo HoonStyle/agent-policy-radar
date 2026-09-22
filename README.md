@@ -58,16 +58,29 @@ This repo is structured for multiple agent surfaces:
 Claude Code marketplace install from this repo:
 
 ```bash
-claude plugin marketplace add HoonStyle/agent-policy-radar@v0.1.5
+claude plugin marketplace add HoonStyle/agent-policy-radar@main
 claude plugin install agent-policy-radar@agent-policy-radar
 ```
 
 Codex marketplace install from this repo:
 
 ```bash
-codex plugin marketplace add HoonStyle/agent-policy-radar@v0.1.5
+codex plugin marketplace add HoonStyle/agent-policy-radar --ref main
 codex plugin add agent-policy-radar@agent-policy-radar
 ```
+
+The Claude/Codex marketplaces track `main`, not a release tag. New releases must bump `package.json`, root `plugin.json`, `.claude-plugin/plugin.json`, and both version fields in `.claude-plugin/marketplace.json` together. A branch-tracking source permits discovery; it does not guarantee automatic installation.
+
+To fetch and install newer versions without re-registering the marketplace:
+
+```bash
+claude plugin marketplace update agent-policy-radar
+claude plugin update agent-policy-radar@agent-policy-radar
+codex plugin marketplace upgrade agent-policy-radar
+codex plugin add agent-policy-radar@agent-policy-radar
+```
+
+Existing tag-pinned users must first remove and re-add this marketplace using the commands above, then reinstall the plugin. Removing the marketplace can uninstall its plugins; this catalog currently contains only Agent Policy Radar.
 
 Pi install from GitHub:
 
