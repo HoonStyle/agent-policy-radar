@@ -139,7 +139,9 @@ Claude: `/paper-research:paper-research`. In a new Codex session, explicitly req
 
 The workflow distinguishes access depth, author claims, observations and interpretation; checks citation identity and locators; and reports unknowns rather than inventing citations/results. Public access and authorized data use remain required. Experiments, paid access and private manuscript uploads are not automatically authorized. Simple summaries need no persistent ledger. References and an optional Korean evidence template are bundled under `plugins/paper-research/skills/paper-research/`.
 
-Package validation does not demonstrate literature coverage, citation accuracy or scientific quality; those need actual source-grounded task validation.
+Optional nursing references cover survey/instrument studies, interventions, qualitative and mixed-methods research, systematic/scoping reviews and meta-analysis, data privacy/cleaning, statistical method selection and results-to-text checks. SPSS/AMOS/R are workflow choices, not installed integrations; the plugin supplies no automatic data collection, clinical decisions or statistical engine. Read only the stages relevant to the task.
+
+Package validation does not demonstrate literature coverage, citation accuracy or scientific quality; those need actual source-grounded task validation. Nursing-domain methods and software execution have not been clinically/statistically validated by these packaging tests.
 
 ## Discover new official guidance
 

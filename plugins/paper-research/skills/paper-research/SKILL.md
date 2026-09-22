@@ -1,6 +1,6 @@
 ---
 name: paper-research
-description: Use for scholarly literature discovery, comparison, close reading, critical appraisal, reproduction planning, research design, and evidence-grounded academic drafting. Select only the stages requested; not a generic web-summary skill or an automatic experiment runner.
+description: Use for scholarly literature discovery, comparison, close reading, critical appraisal, reproduction planning, research design, data collection/cleaning, statistical analysis support, and evidence-grounded academic drafting, including nursing research. Select only the stages requested; not a generic web-summary skill or an automatic experiment runner.
 ---
 
 # Paper Research — 논문 연구 (선택)
@@ -21,6 +21,10 @@ Choose one or more stages below; never run all stages just because this skill su
 | 재현 / Reproduction | Check assets, plan and optionally execute authorized experiments | [Reproduction and design](references/reproduction.md) |
 | 연구 설계 / Design | Form testable hypotheses and an appropriate evaluation plan | [Reproduction and design](references/reproduction.md) |
 | 집필 / Writing | Build an argument with verified citations and declared limitations | [Writing and citation checks](references/writing.md) |
+
+## Nursing research (optional specialization)
+
+For nursing research, read [the nursing design guide](references/nursing.md) and only the references needed for the requested stage: [data collection/cleaning](references/nursing-data.md) and [statistics/results writing](references/nursing-analysis.md). These cover survey/instrument, intervention, qualitative, mixed-methods, systematic/scoping review and meta-analysis work. SPSS, AMOS and R are supported as workflow choices, not bundled software integrations. Do not apply all designs or checks to every task, or turn sentence editing into a new statistical analysis. Verify current reporting-guideline versions when relevant; do not claim compliance, ethics approval, data access or an executed analysis without evidence. Real participant data must follow institutional privacy and authorized-use boundaries.
 
 ## Evidence contract
 
