@@ -1,6 +1,6 @@
 {
   "name": "review-workflow",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Optional evidence-based code review, finding ledger, and fix verification workflow.",
   "author": {"name": "HoonStyle"},
   "license": "MIT",

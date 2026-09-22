@@ -1,6 +1,6 @@
 {
   "name": "agent-policy-radar",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Pi skill and CLI for reviewing Claude/Codex/Pi instruction hygiene, source guidance changes, and approval-gated policy recommendations.",
   "license": "MIT",
   "type": "module",
