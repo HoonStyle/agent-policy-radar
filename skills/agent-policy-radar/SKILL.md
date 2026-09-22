@@ -100,6 +100,8 @@ Always preserve this boundary:
 
 ## Interpretation rules
 
+- Prefer each provider's native harness defaults and documented behavior. Propose additional prompt/configuration compensation only for a confirmed problem in the actual environment, and keep it minimal and scoped. Do not transplant another provider's workaround or add speculative rules based solely on model trends. Preserve explicit user/project requirements and applicable safety boundaries.
+
 - Preserve the user's personal preferences and intent (including language, tone, workflow, and risk tolerance within applicable safety boundaries). Brevity, duplication, or a provider's generic recommendation alone is not a reason to rewrite them.
 - For personal instructions, propose only the minimum change tied to an evidenced conflict or observed unwanted behavior. Explain that connection and what intent remains preserved. If evidence or intended meaning is unclear, ask rather than recommend changing the preference. Broader style cleanup requires an explicit user request.
 
