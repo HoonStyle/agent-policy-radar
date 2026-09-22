@@ -4,6 +4,13 @@
 
 아래 v0.1.0–v0.1.4 항목은 2026-09-22에 Git 이력과 당시 작업 기록을 바탕으로 **사후 작성**했다. 실시간 감사 로그나 승인 증명으로 간주하지 않는다.
 
+## Unreleased
+
+- 선택형 review-workflow에 JSON ledger CLI 추가: init/finding/update/pass/validate/compare, UTC 이벤트·이전 상태 보존 및 협력적 쓰기 잠금.
+- 프로젝트 `.review-workflow.json` 선언형 설정, 검증 수준별 필수 증거, 요구사항·관측 경계·미확인 구간, 검토 입력 기반 분류 및 한국어 양식 추가.
+- 기준선은 HEAD와 index/worktree/untracked SHA-256 목록으로 구분. 원문 저장 없음. ignored 파일·submodule·동시 변경 한계 명시.
+- 13개 테스트 통과: 임시 Git 저장소의 staged/unstaged/untracked 분리, CLI 생성/ID/갱신 거부/비교/이력/잠금 확인 포함. Windows 실환경 및 의미 판정 정확도는 미검증.
+
 ## v0.1.6 — 2026-09-22
 
 - 구현 근거: `22e12bb`, `4a0a18f`, `3780054`, `b3a18bc`. 기본 플러그인/마켓 버전은 0.1.6, 선택형 review-workflow는 독립 버전 0.1.0.

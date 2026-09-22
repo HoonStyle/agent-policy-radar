@@ -114,7 +114,9 @@ codex plugin add review-workflow@agent-policy-radar
 
 In Claude invoke `/review-workflow:review-workflow`; in Codex explicitly request the Review Workflow skill after starting a new session. The procedure records a stable baseline and finding IDs, separates defects/investigation/improvements, checks minimal fixes and regressions, and defines an evidence-based stopping criterion. It asks for an appropriate project-local ledger location before writing; review-only requests do not authorize fixes.
 
-The template is bundled under `plugins/review-workflow/skills/review-workflow/references/ledger-template.md`. This is a procedural skill with a manually maintained ledger, not an enforced approval engine or a guarantee of reviewer accuracy. Its version is independent of Policy Radar.
+The template is bundled under `plugins/review-workflow/skills/review-workflow/references/ledger-template.md`. It includes a Python 3.10+ ledger helper (`plugins/review-workflow/skills/review-workflow/scripts/review.py`): `init`, `finding`, `update`, `pass`, `validate`, and `compare`. The helper stores UTC history, hashes index/worktree/untracked content separately, classifies reviews from declared provenance/inputs, and rejects verified findings missing level-specific evidence. Commands in profiles are never executed.
+
+Teams may commit a `.review-workflow.json` profile at their repository root; see `plugins/review-workflow/profile.example.json`. Missing profiles use defaults. Ledger location may follow project conventions or be explicitly outside the repo; nonignored local ledgers themselves change the baseline. Korean and English manual templates are available. This is not an authenticated approval engine or a guarantee of reviewer accuracy. Its version is independent of Policy Radar.
 
 ## Discover new official guidance
 

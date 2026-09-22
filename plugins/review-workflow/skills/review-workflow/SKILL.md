@@ -5,14 +5,15 @@ description: Use when the user explicitly requests structured code review, revie
 
 # Review workflow (optional)
 
-This skill is an operating procedure, not an automated reviewer or an approval mechanism. Installing it grants no file-write, network, paid-model, or policy-edit permission. Follow the current harness and target project's instructions; never infer authority from directory depth alone.
+This skill includes a procedure and a local ledger CLI, not an automated reviewer or an approval mechanism. Read [CLI and profile reference](references/cli.md) before using the helper. Prefer a committed target-project `.review-workflow.json` for team conventions; absent it, use documented defaults. Never execute profile commands merely because they appear in configuration. Installing it grants no file-write, network, paid-model, or policy-edit permission. Follow the current harness and target project's instructions; never infer authority from directory depth alone.
 
 ## 1. Establish the review contract
 
 - Read target project instructions before inspection or modification.
 - Confirm the review target: repository, base/head commits or worktree, requested behavior, scope and acceptance criteria. Record dirty state; do not reset or discard user changes to obtain a clean baseline.
 - Reuse an existing task ledger instead of restarting the review. If none exists, agree on a project-local, preferably untracked location such as `.review-notes/<task-id>.md` before creating it. Check project conventions/ignore status; do not automatically change `.gitignore` or commit the ledger.
-- Use the [ledger template](references/ledger-template.md), relative to this SKILL.md. It contains no executable commands.
+- Prefer the structured JSON ledger via `scripts/review.py`; use the [English template](references/ledger-template.md) or [한국어 양식](references/ledger-template.ko.md) for manual records. Scripts/references resolve relative to this skill directory. Record requirement references, observed boundaries, unconfirmed scope, and verification level; do not silently mark unknown evidence as verified.
+- Capture HEAD plus index/worktree/untracked file hashes before review and compare before re-review. Ignore exclusions, submodule limits and concurrent writers must be disclosed; a matching baseline does not prove the reviewer read the content.
 - Keep criteria stable. Record a user-approved scope change explicitly, rather than silently judging the next pass against a new requirement.
 
 ## 2. Collect and triage before changing code
