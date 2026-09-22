@@ -10,7 +10,7 @@ Claude Code와 Codex에서 필요한 플러그인만 설치합니다. 각 회사
 
 | 플러그인 | 용도 | 현재 릴리즈 버전 |
 | --- | --- | --- |
-| **`agent-policy-radar`** | 공식 문서 변화 확인, 로컬 지침의 중복 후보·정리안 검토 | 0.1.14 |
+| **`agent-policy-radar`** | 공식 문서 변화 확인, 로컬 지침의 중복 후보·정리안 검토 | 0.1.15 |
 | **`review-workflow`** | 리뷰 지적을 정리하고 수정·재검증이 끝없이 반복되는 상황 관리 | 0.2.1 |
 | **`paper-research`** | 문헌 탐색부터 논문 집필까지 연구 단계별 보조, 간호학 참고 문서 포함 | 0.1.1 |
 
@@ -71,7 +71,7 @@ codex plugin list
 루트의 Policy Radar 스킬은 Pi 패키지로도 설치할 수 있습니다.
 
 ```sh
-pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.14
+pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.15
 ```
 
 이 명령은 버전 고정 설치이며, 선택형 두 플러그인을 Pi 스킬로 자동 등록하지 않습니다. npm 배포·갤러리 등재를 의미하지도 않습니다.
