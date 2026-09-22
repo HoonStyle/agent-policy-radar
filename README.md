@@ -13,6 +13,12 @@ It is not a benchmark suite by default. It is an operational note and review lay
 - standing instruction hygiene: `AGENTS.md`, `CLAUDE.md`, MCP server instructions, skills, project playbooks.
 - project-specific recommendations: what to shorten, split, remove, or keep.
 
+## CI and release gate
+
+GitHub Actions runs offline tests on every push/PR and manual dispatch: Python 3.11 on macOS, and Windows with `PYTHONUTF8=0` and `1`. Logs and package reports are retained for 14 days. Tests do not fetch live provider documentation or use Claude/Codex credentials; hosted runner validation does not replace real harness behavior checks.
+
+For releases, bump synchronized manifests and CHANGELOG, then push a `v<package-version>` tag. The workflow checks that tag's code on both OSes and validates package contents before creating the GitHub Release. Do not publish releases manually before checks pass. This is a workflow gate, not a GitHub permission restriction against maintainers manually bypassing it. No branch protection or automatic local plugin update is configured here.
+
 ## Change History and Auditability
 
 - [CHANGELOG.md](CHANGELOG.md): release changes, reasons, commit evidence, verification limits.

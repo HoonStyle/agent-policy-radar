@@ -6,6 +6,10 @@
 
 ## Unreleased
 
+- GitHub Actions에 macOS/Windows(UTF-8 모드 0/1) 오프라인 테스트·버전/패키징 검사 추가. push/PR/수동 실행 지원, 로그 14일 보존.
+- v 태그의 모든 검사가 성공한 뒤 GitHub Release 생성하도록 연결. 수동 우회 방지 권한/branch protection은 별도 미설정.
+- 패키징 확인 중 발견한 Python __pycache__/pyc 포함 문제를 배포 목록에서 제외.
+
 - all에서 외부 discover/sources 실패 후에도 독립적인 로컬 분석 계속. 부분 실패는 종료코드 1로 유지, 로컬 실패 시 의존 단계 중단.
 - 테스트 파일 I/O 및 자식 Python 출력 디코딩에 UTF-8 명시. Windows 실환경 검증을 대신하지 않음.
 - MCP 설정 분석은 현재 제외라고 범위 안내. 복원 기능은 추가하지 않음.

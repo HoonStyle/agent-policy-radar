@@ -38,6 +38,8 @@
     "scripts/*.py",
     "skills/**",
     "plugins/review-workflow/**",
+    "!**/__pycache__/**",
+    "!**/*.pyc",
     "sources/**",
     "findings/**",
     "recommendations/policy-radar-automation-plan.md"

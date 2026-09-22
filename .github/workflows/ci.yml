@@ -1,0 +1,92 @@
+name: Cross-platform CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test (${{ matrix.os }}, UTF8=${{ matrix.utf8 }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-latest
+            utf8: '0'
+          - os: windows-latest
+            utf8: '0'
+          - os: windows-latest
+            utf8: '1'
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONUTF8: ${{ matrix.utf8 }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Runtime details
+        run: python -c "import sys,locale; print(sys.version); print('utf8_mode=',sys.flags.utf8_mode); print('locale_encoding=',locale.getencoding())"
+      - name: Offline regression tests
+        shell: bash
+        run: python -m unittest discover -s tests -v 2>&1 | tee test-results.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tests-${{ matrix.os }}-utf8-${{ matrix.utf8 }}
+          path: test-results.log
+          retention-days: 14
+          if-no-files-found: warn
+
+  package:
+    name: Package verification
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Manifest versions and optional plugin isolation
+        run: python -m unittest discover -s tests -p test_release_versions.py -v
+      - name: Verify release tag matches package
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: python -c "import json,os; assert os.environ['GITHUB_REF_NAME'] == 'v'+json.load(open('package.json', encoding='utf-8'))['version']"
+      - name: Verify package contents (no publish)
+        run: |
+          npm pack --dry-run --json > package-report.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          files = {x['path'] for x in json.loads(Path('package-report.json').read_text(encoding='utf-8'))[0]['files']}
+          required = {'plugin.json', '.claude-plugin/plugin.json', '.agents/plugins/marketplace.json', 'scripts/policy_radar.py', 'skills/agent-policy-radar/SKILL.md', 'plugins/review-workflow/skills/review-workflow/scripts/review.py'}
+          assert required <= files, required - files
+          assert not any(p.startswith(('reports/', 'data/snapshots/')) or '__pycache__' in p for p in files), 'Private/generated artifacts in package'
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: package-report
+          path: package-report.json
+          retention-days: 14
+
+  release:
+    name: Publish tested tag
+    needs: [test, package]
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish GitHub release after all checks pass
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: gh release create "$TAG" --verify-tag --generate-notes --title "$TAG" --notes "Cross-platform tests and package checks passed for this tag. See CHANGELOG.md for changes and verification limits."
