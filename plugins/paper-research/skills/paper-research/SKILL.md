@@ -29,6 +29,7 @@ Choose one or more stages below; never run all stages just because this skill su
 - Separate author claim, reported observation, independently reproduced result, and your inference. Match claim strength to study design; association alone does not establish causality.
 - Link substantive claims to the actual source and a useful locator: section, table, figure, theorem or page. Printed and PDF page numbers may differ; HTML has no page numbers. If location cannot be confirmed, say so instead of inventing it.
 - Never invent citations, quotations, datasets, numerical results, DOIs or executed experiments. Verify citation metadata rather than completing it from memory. Read cited support before treating it as evidence; search snippets and another paper's citation are leads, not proof.
+- Avoid unnecessary derived statistics. When calculation is needed, state assumptions and limits; one method's confidence interval alone does not establish no difference between methods. Lack of original author code alone does not make reproduction impossible: distinguish independent implementation from reproducing the authors' exact setup.
 - Missing access/evidence means unknown, not a negative finding. Report conflicting evidence and limitations; do not cherry-pick supporting papers. Do not compare metrics across incompatible datasets/splits/budgets without qualification.
 - Research novelty claims require a stated search scope; use “not found within this search” instead of “no prior work exists.”
 
