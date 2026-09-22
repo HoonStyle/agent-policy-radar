@@ -24,6 +24,16 @@ class WorkflowTests(unittest.TestCase):
         data['reviewer'] = 'A'
         self.assertEqual(r.classify(data), 'self')
 
+    def test_pass_references(self):
+        data = {'schema_version': 1, 'findings': [{'id': 'R-001', 'status': 'open'}],
+                'passes': [{'classification': 'unknown', 'finding_ids': ['R-001']}]}
+        self.assertFalse(r.validate(data))
+        for refs in (['R-999'], 'R-001', [None], None):
+            data['passes'][0]['finding_ids'] = refs
+            self.assertTrue(r.validate(data))
+        data['passes'][0]['finding_ids'] = []
+        self.assertFalse(r.validate(data))
+
     def test_verification(self):
         finding = {'id': 'R-001', 'status': 'verified', 'requirement_reference': 'spec',
                    'observed_boundary': 'return', 'unconfirmed_scope': 'external output',
@@ -67,6 +77,20 @@ class WorkflowTests(unittest.TestCase):
             self.assertEqual(r.load(ledger), data)
             self.assertEqual(len(list(Path(str(ledger) + '.history').glob('*.json'))), 3)
             cli('validate', ledger)
+            entry.write_text('{"finding_ids":["R-999"]}')
+            cli('pass', ledger, '--input', entry, expected=1)
+            self.assertEqual(r.load(ledger), data)
+            self.assertEqual(len(list(Path(str(ledger) + '.history').glob('*.json'))), 3)
+            entry.write_text('{"finding_ids":["R-001"]}')
+            cli('pass', ledger, '--input', entry)
+            cli('validate', ledger)
+            # Standalone validation must catch a manually corrupted reference too.
+            good = ledger.read_bytes()
+            broken = r.load(ledger)
+            broken['passes'][0]['finding_ids'] = ['R-999']
+            ledger.write_text(json.dumps(broken))
+            cli('validate', ledger, expected=1)
+            ledger.write_bytes(good)
             f.write_text('changed again'); cli('compare', ledger, expected=1)
             # Lock held by someone else must never be removed by a failed command.
             lock = Path(str(ledger) + '.lock'); lock.write_text('held')

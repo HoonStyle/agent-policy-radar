@@ -41,7 +41,7 @@ A request for review alone is not permission to implement every suggestion. If c
 
 ## 4. Re-review the fix, then affected behavior
 
-First check that each existing finding is resolved and the new diff introduces no regression. Broaden review where change impact warrants it, not as an automatic unlimited whole-repo loop.
+Recheck changed code and affected behavior first, including resolution of existing findings and regressions. Broaden review only where impact or uncertainty warrants it, not as an automatic whole-repo loop. Reuse previous evidence when its relevant code/dependency versions, inputs, environment, configuration and acceptance criteria are unchanged. Record the original pass/evidence reference and why it remains applicable; label it reused, never newly executed. If equivalence is unknown, reverify the affected scope.
 
 Classify every new finding as:
 - pre-existing omission,

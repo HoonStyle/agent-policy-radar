@@ -6,6 +6,9 @@
 
 ## Unreleased
 
+- pass의 `finding_ids` 타입 및 존재 여부 검사: 없는 R-ID 참조는 저장 전에 거부하고 기존 ledger/history를 유지. 수동 수정 ledger의 validate에서도 검사.
+- 재검토는 변경·영향 범위 중심으로 수행. 관련 버전·조건이 같은 이전 근거는 참조와 재사용 이유를 남기고 재사용하되 새 실행으로 보고하지 않음.
+
 - 선택형 review-workflow에 JSON ledger CLI 추가: init/finding/update/pass/validate/compare, UTC 이벤트·이전 상태 보존 및 협력적 쓰기 잠금.
 - 프로젝트 `.review-workflow.json` 선언형 설정, 검증 수준별 필수 증거, 요구사항·관측 경계·미확인 구간, 검토 입력 기반 분류 및 한국어 양식 추가.
 - 기준선은 HEAD와 index/worktree/untracked SHA-256 목록으로 구분. 원문 저장 없음. ignored 파일·submodule·동시 변경 한계 명시.

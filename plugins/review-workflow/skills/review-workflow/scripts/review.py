@@ -145,6 +145,13 @@ def validate(data):
             if any(not finding.get(key) for key in ['requirement_reference', 'observed_boundary', 'unconfirmed_scope']):
                 errors.append(f'{fid}: requirement/boundary/unconfirmed scope required (use explicit none if appropriate)')
     for event in data.get('passes', []):
+        refs = event.get('finding_ids', [])
+        if not isinstance(refs, list) or any(not isinstance(ref, str) for ref in refs):
+            errors.append(f'{event.get("id", "pass")}: finding_ids must be a list of strings')
+        else:
+            for ref in refs:
+                if ref not in seen:
+                    errors.append(f'{event.get("id", "pass")}: unknown finding ID {ref}')
         if event.get('classification') != classify(event):
             errors.append('Pass classification inconsistent with recorded inputs')
     return errors
