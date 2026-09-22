@@ -30,7 +30,7 @@
     },
     {
       "id": "openai-latest-model",
-      "label": "OpenAI latest-model guide (rolling; currently GPT-6, prompting observations based on Astra)",
+      "label": "OpenAI latest-model guide (rolling; verified 2026-09-23: GPT-6, prompting observations based on Astra)",
       "url": "https://developers.openai.com/api/docs/guides/latest-model.md",
       "kind": "model-prompting",
       "cadence": "weekly"

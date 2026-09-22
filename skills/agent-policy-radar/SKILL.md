@@ -100,7 +100,7 @@ Always preserve this boundary:
 1. Automatic work may fetch public official docs, scan local instruction files, and create reports/recommendations inside `agent-policy-radar`.
 2. Do not edit any target global instruction, project `CLAUDE.md`/`AGENTS.md`, skill, or MCP config unless the user explicitly approves that specific target edit.
 3. If a recommendation concerns another repository, make the edit only in that target repository after approval and after reading that repository's own `CLAUDE.md`/`AGENTS.md`.
-4. If analysis detects conflict or ambiguity, report excerpts and ask for approval/choice only where the unresolved decision blocks the next action; do not auto-resolve it. Continue unrelated work already authorized.
+4. If analysis detects a relevant conflict or ambiguity, report the excerpts and uncertainty regardless of whether it blocks work. Ask for approval/choice only where the unresolved decision blocks the next action; do not auto-resolve it. Continue unrelated work already authorized.
 
 Complete requested investigation, analysis and reviewable drafts before waiting for approval of their application. Do not stop at offering a plan when the user already requested that work. If an instruction requires stopping, identify the file and relevant passage, explain its application, and distinguish the explicit restriction from your interpretation. A progress update or announced next step is not completion: report the requested deliverable, performed checks and remaining blockers. This does not expand authorization for risky actions or modify existing approval boundaries.
 
