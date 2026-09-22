@@ -65,7 +65,11 @@ Outputs:
 
 Guardrail: the CLI only detects and drafts recommendations. It must not edit global instructions, skills, MCP configs, or other repositories without explicit approval.
 
-A global Pi skill wrapper is installed at:
+A Pi skill wrapper source is tracked at:
+
+`skills/agent-policy-radar/SKILL.md`
+
+The current machine also has it installed globally at:
 
 `~/.pi/agent/skills/agent-policy-radar/SKILL.md`
 
