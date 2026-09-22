@@ -38,6 +38,7 @@
     "scripts/*.py",
     "skills/**",
     "plugins/review-workflow/**",
+    "plugins/paper-research/**",
     "!**/__pycache__/**",
     "!**/*.pyc",
     "sources/**",

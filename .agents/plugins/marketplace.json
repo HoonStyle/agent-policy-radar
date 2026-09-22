@@ -5,6 +5,14 @@
   },
   "plugins": [
     {
+      "name": "paper-research",
+      "source": {"source": "local", "path": "./plugins/paper-research"},
+      "interface": {
+        "displayName": "Paper Research (Optional)",
+        "shortDescription": "Literature discovery, appraisal, reproduction and academic writing."
+      }
+    },
+    {
       "name": "review-workflow",
       "source": {"source": "local", "path": "./plugins/review-workflow"},
       "interface": {

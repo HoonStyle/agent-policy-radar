@@ -1,0 +1,8 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "paper-research",
+  "version": "0.1.0",
+  "description": "Optional scholarly discovery, appraisal, reproduction, research design and evidence-grounded writing workflow.",
+  "author": {"name": "HoonStyle"},
+  "license": "MIT"
+}

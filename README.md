@@ -124,6 +124,23 @@ The template is bundled under `plugins/review-workflow/skills/review-workflow/re
 
 Teams may commit a `.review-workflow.json` profile at their repository root; see `plugins/review-workflow/profile.example.json`. Missing profiles use defaults. Ledger location may follow project conventions or be explicitly outside the repo; nonignored local ledgers themselves change the baseline. Korean and English manual templates are available. This is not an authenticated approval engine or a guarantee of reviewer accuracy. Its version is independent of Policy Radar.
 
+## Optional Paper Research plugin
+
+`paper-research` is separately installable; updating Policy Radar does not enable it.
+
+```bash
+claude plugin marketplace update agent-policy-radar
+claude plugin install paper-research@agent-policy-radar
+codex plugin marketplace upgrade agent-policy-radar
+codex plugin add paper-research@agent-policy-radar
+```
+
+Claude: `/paper-research:paper-research`. In a new Codex session, explicitly request the Paper Research skill. Choose only the requested stage: discovery, comparison, close reading/appraisal, reproduction, research design, or writing. It uses host-provided tools, not a bundled search service. Python/compute setup is not required just to use the procedural skill.
+
+The workflow distinguishes access depth, author claims, observations and interpretation; checks citation identity and locators; and reports unknowns rather than inventing citations/results. Public access and authorized data use remain required. Experiments, paid access and private manuscript uploads are not automatically authorized. Simple summaries need no persistent ledger. References and an optional Korean evidence template are bundled under `plugins/paper-research/skills/paper-research/`.
+
+Package validation does not demonstrate literature coverage, citation accuracy or scientific quality; those need actual source-grounded task validation.
+
 ## Discover new official guidance
 
 ```bash
