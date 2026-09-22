@@ -94,7 +94,7 @@ Existing tag-pinned users must first remove and re-add this marketplace using th
 Pi install from GitHub:
 
 ```bash
-pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.13
+pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.14
 ```
 
 For local development, run this from the checked-out repository root:
