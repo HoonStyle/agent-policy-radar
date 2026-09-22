@@ -36,7 +36,20 @@ def main() -> int:
     sub.add_parser("recommend", help="Generate markdown recommendations from overlap analysis")
     sub.add_parser("all", help="Run sources, scan, overlap, and recommendation generation")
 
+    review = sub.add_parser("review", help="Draft a prompt cleanup diff without modifying the original")
+    review.add_argument("target")
+    review.add_argument("--proposal")
+    review.add_argument("--output-dir")
+
     args = ap.parse_args()
+    if args.command == "review":
+        from review_prompt import main as review_main
+        parameters = [args.target]
+        for key in ("proposal", "output_dir"):
+            value = getattr(args, key)
+            if value:
+                parameters.extend(["--" + key.replace("_", "-"), value])
+        return review_main(parameters)
     order = ["sources", "scan", "overlap", "recommend"] if args.command == "all" else [args.command]
     for name in order:
         code = run_step(name)

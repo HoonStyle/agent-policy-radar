@@ -17,7 +17,7 @@ It is not a benchmark suite by default. It is an operational note and review lay
 
 - [CHANGELOG.md](CHANGELOG.md): release changes, reasons, commit evidence, verification limits.
 - [Audit trail proposal](recommendations/audit-trail.md): planned per-run records and approval/application evidence.
-- Current reports are overwritten on rerun; persistent execution auditing is **not implemented yet**.
+- Legacy scan reports are overwritten on rerun. The new `review` command preserves per-review bundles; full scan/approval/application auditing is **not implemented yet**.
 
 ## Core Principle
 
@@ -82,6 +82,17 @@ pi install .
 ```
 
 Public Claude/OpenAI directory submission still requires the provider review portals; this repository now contains the manifest and marketplace metadata needed for local/Git marketplace testing and submission preparation.
+
+## Prompt cleanup review
+
+```bash
+python3 scripts/policy_radar.py review "path/to/CLAUDE.md"
+python3 scripts/policy_radar.py review "path/to/CLAUDE.md" --proposal "path/to/draft.md"
+```
+
+Use `py -3` on Windows. Outputs are unique private-local review directories under `~/.agent-policy-radar/reviews/` (override with `--output-dir`), outside the plugin cache. Each contains a proposed text, unified diff, original/proposed/patch hashes, and pending-review status. Originals are never edited; no apply command exists. Bundles contain potentially private excerpts: do not publish them automatically. POSIX permission bits are best-effort and do not substitute for Windows ACLs.
+
+Without a supplied proposal, cleanup is limited to adjacent identical plain bullets outside code fences, retaining safety-keyword matches. Broader shortening, moves, and semantic conflicts require agent/human review through the skill workflow and `--proposal`; the CLI does not claim to solve them automatically.
 
 ## CLI MVP
 

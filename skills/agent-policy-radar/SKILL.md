@@ -60,6 +60,20 @@ py -3 scripts\policy_radar.py overlap
 py -3 scripts\policy_radar.py recommend
 ```
 
+## Prompt cleanup (explicit request)
+
+For cleanup requests, do not stop at an overlap count. Read the explicitly selected instruction files locally. Identify which harness actually loads each file; if authority or loading is unknown, ask rather than infer priority from directory depth.
+
+Classify each proposed change as keep, shorten, move, delete, or conflict-review. Preserve safety/approval rules and domain constraints. Repeated rules across independent skills may be necessary for portability. Do not send private instructions to external helper APIs without separate permission.
+
+Write a proposed replacement to a private local draft file, without changing the original. Explain the evidence and reason for each change. Then generate the review bundle:
+
+```bash
+python3 scripts/policy_radar.py review "<original-file>" --proposal "<draft-file>"
+```
+
+On Windows use `py -3` instead of `python3`. Without `--proposal`, the CLI only drafts adjacent identical bullet cleanup; it is not semantic analysis. Inspect `changes.diff` and the safety-removal flags before presenting the proposal. The bundle records hashes, not user approval. Application is outside this CLI and requires explicit approval of the exact target and diff; recheck the original hash before applying. For moves, review both source and destination together.
+
 ## Outputs
 
 Summarize these files after running:
