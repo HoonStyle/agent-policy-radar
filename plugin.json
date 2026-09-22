@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "agent-policy-radar",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Review Claude/Codex/Pi instruction hygiene, official guidance changes, and approval-gated policy recommendations.",
   "author": {
     "name": "HoonStyle",
