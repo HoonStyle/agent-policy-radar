@@ -87,6 +87,8 @@ Summarize these files after running:
 - `reports/overlap_analysis.md`
 - `recommendations/current.json` and only the current run files it names; root-level drafts are historical
 
+For ordinary result reports too, inspect the surrounding source sentences and actual loading/application scope of automated candidates relevant to the user's request. Classify them as keep, change candidate, or judgment deferred, with a brief reason. Sentence duplication alone does not justify a change recommendation. If context or scope cannot be confirmed, defer judgment rather than imply a verified issue. Do not expand review to unrelated files or the entire conversation history.
+
 For Telegram-originated turns, keep the reply concise and list the most important generated paths.
 
 ## Approval gate
