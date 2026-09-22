@@ -126,7 +126,7 @@ python3 scripts/policy_radar.py discover
 
 Fetches four official `llms.txt` indexes (Claude Code, Anthropic platform, OpenAI developers, ChatGPT Learn) and extracts prompting/model/migration/instruction/release/changelog links. Only HTTPS links and redirects to explicitly allowed official hosts are accepted. Requests have timeouts and size limits, without retries or recursive crawling.
 
-Reports are preserved per run in `~/.agent-policy-radar/discovery/`. First-seen URLs are not necessarily new publications. Candidates require original-page review; discovery does not fetch their bodies, change the source registry, or edit instructions. Failures are recorded and return a nonzero status. `discover` can run separately and is now the first step of `all`. Failures stop the pipeline rather than being interpreted as no changes. No scheduler is installed.
+Reports are preserved per run in `~/.agent-policy-radar/discovery/`. First-seen URLs are not necessarily new publications. Candidates require original-page review; discovery does not fetch their bodies, change the source registry, or edit instructions. Failures are recorded and return a nonzero status. `discover` can run separately and is now the first step of `all`. In `all`, failed discovery/source checks are reported while independent local analysis continues; the final exit status remains nonzero (partial result). A failed local stage stops its dependent stages. Failures are never interpreted as no changes. No scheduler is installed.
 
 ## Prompt cleanup review
 
@@ -145,7 +145,7 @@ This is an instruction-review assistant, not a validated latest-model optimizati
 
 `all` runs discovery, source checks, inventory, overlap analysis and draft generation in that order. Source reports distinguish first-seen, changed, unchanged and failed. Generated drafts live in `recommendations/runs/<id>/`; `recommendations/current.json` identifies the current run even with zero candidates. Older root-level drafts are historical and must not be used as current results.
 
-MCP-scoped files and non-Markdown configuration/cache files are excluded before reading their contents. For MCP instructions, explicitly select a sanitized Markdown instruction document instead. Markdown is not automatically secret-free; inspect before sharing. Previously generated reports may already contain private values: this fix does not retroactively sanitize local archives or Git history.
+**MCP configuration analysis is currently excluded**; restoring it requires a separate scope decision. MCP-scoped files and non-Markdown configuration/cache files are excluded before reading their contents. For MCP instructions, explicitly select a sanitized Markdown instruction document instead. Markdown is not automatically secret-free; inspect before sharing. Previously generated reports may already contain private values: this fix does not retroactively sanitize local archives or Git history.
 
 ## CLI MVP
 

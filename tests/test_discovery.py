@@ -20,7 +20,7 @@ class DiscoveryTests(unittest.TestCase):
             with patch.object(d, 'INDEXES', [d.INDEXES[0]]), patch.object(d, 'fetch', return_value=('[New model](/docs/model)', d.INDEXES[0])):
                 self.assertEqual(d.discover(tmp), 0)
                 self.assertEqual(d.discover(tmp), 0)
-            reports = [json.loads(p.read_text()) for p in Path(tmp).glob('*/report.json')]
+            reports = [json.loads(p.read_text(encoding='utf-8')) for p in Path(tmp).glob('*/report.json')]
             self.assertEqual({r['candidates'][0]['status'] for r in reports}, {'first-seen', 'previously-seen'})
             with patch.object(d, 'INDEXES', [d.INDEXES[0]]), patch.object(d, 'fetch', side_effect=TimeoutError('timeout')):
                 self.assertEqual(d.discover(tmp), 1)

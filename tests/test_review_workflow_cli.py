@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -53,46 +54,46 @@ class WorkflowTests(unittest.TestCase):
             def git(*args):
                 return r.git(root, *args)
             git('init'); git('config', 'user.email', 'test@example.invalid'); git('config', 'user.name', 'Fixture')
-            f = root / 'a.txt'; f.write_text('base')
+            f = root / 'a.txt'; f.write_text('base', encoding='utf-8')
             git('add', '.'); git('commit', '-m', 'fixture')
-            f.write_text('staged'); git('add', 'a.txt'); f.write_text('unstaged')
-            (root / 'new.txt').write_text('new')
+            f.write_text('staged', encoding='utf-8'); git('add', 'a.txt'); f.write_text('unstaged', encoding='utf-8')
+            (root / 'new.txt').write_text('new', encoding='utf-8')
             snap = r.snapshot(root)
             self.assertEqual({x['state'] for x in snap['files']}, {'staged', 'unstaged', 'untracked'})
             self.assertEqual(r.snapshot(root), snap)
             ledger = Path(tmp) / 'ledger.json'
             def cli(*args, expected=0):
-                result = subprocess.run([sys.executable, str(SCRIPT), *map(str, args)], capture_output=True, text=True)
+                result = subprocess.run([sys.executable, str(SCRIPT), *map(str, args)], capture_output=True, text=True, encoding='utf-8', env={**os.environ, 'PYTHONIOENCODING': 'utf-8'})
                 self.assertEqual(result.returncode, expected, result.stderr + result.stdout)
             cli('init', '--repo', root, '--output', ledger)
             cli('compare', ledger)
             entry = Path(tmp) / 'finding.json'
-            entry.write_text(json.dumps({'title': 'test', 'status': 'open'}))
+            entry.write_text(json.dumps({'title': 'test', 'status': 'open'}), encoding='utf-8')
             cli('finding', ledger, '--input', entry)
             cli('finding', ledger, '--input', entry)
             data = r.load(ledger)
             self.assertEqual([x['id'] for x in data['findings']], ['R-001', 'R-002'])
-            entry.write_text('{"status":"verified"}')
+            entry.write_text('{"status":"verified"}', encoding='utf-8')
             cli('update', ledger, '--id', 'R-001', '--input', entry, expected=1)
             self.assertEqual(r.load(ledger), data)
             self.assertEqual(len(list(Path(str(ledger) + '.history').glob('*.json'))), 3)
             cli('validate', ledger)
-            entry.write_text('{"finding_ids":["R-999"]}')
+            entry.write_text('{"finding_ids":["R-999"]}', encoding='utf-8')
             cli('pass', ledger, '--input', entry, expected=1)
             self.assertEqual(r.load(ledger), data)
             self.assertEqual(len(list(Path(str(ledger) + '.history').glob('*.json'))), 3)
-            entry.write_text('{"finding_ids":["R-001"]}')
+            entry.write_text('{"finding_ids":["R-001"]}', encoding='utf-8')
             cli('pass', ledger, '--input', entry)
             cli('validate', ledger)
             # Standalone validation must catch a manually corrupted reference too.
             good = ledger.read_bytes()
             broken = r.load(ledger)
             broken['passes'][0]['finding_ids'] = ['R-999']
-            ledger.write_text(json.dumps(broken))
+            ledger.write_text(json.dumps(broken), encoding='utf-8')
             cli('validate', ledger, expected=1)
             ledger.write_bytes(good)
-            f.write_text('changed again'); cli('compare', ledger, expected=1)
+            f.write_text('changed again', encoding='utf-8'); cli('compare', ledger, expected=1)
             # Lock held by someone else must never be removed by a failed command.
-            lock = Path(str(ledger) + '.lock'); lock.write_text('held')
+            lock = Path(str(ledger) + '.lock'); lock.write_text('held', encoding='utf-8')
             cli('finding', ledger, '--input', entry, expected=1)
             self.assertTrue(lock.exists())

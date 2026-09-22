@@ -32,7 +32,7 @@ class TargetsTest(unittest.TestCase):
             # MCP/credential contents should not be needed for these targets.
             secret = home / '.claude/plugins/cache/market/plugin/1.0/settings.json'
             secret.write_text('{}', encoding='utf-8')
-            config = json.loads((ROOT / 'data/instruction_targets.json').read_text())
+            config = json.loads((ROOT / 'data/instruction_targets.json').read_text(encoding='utf-8'))
             config['targets'] = [t for t in config['targets'] if t['path'].startswith('~')]
             config['globs'] = [g for g in config['globs'] if g['pattern'].startswith('~')]
             with patch.dict(os.environ, {'HOME': str(home), 'USERPROFILE': str(home)}):

@@ -26,16 +26,16 @@ class ReviewTests(unittest.TestCase):
             raw = b'- Never delete files.\r\n'
             p.write_bytes(raw)
             proposal = root / 'draft.md'
-            proposal.write_text('Replacement\n')
+            proposal.write_text('Replacement\n', encoding='utf-8')
             a = review(p, root / 'output', proposal)
             b = review(p, root / 'output', proposal)
             self.assertNotEqual(a, b)
             self.assertEqual(p.read_bytes(), raw)
-            record = json.loads((a / 'manifest.json').read_text())
+            record = json.loads((a / 'manifest.json').read_text(encoding='utf-8'))
             self.assertFalse(record['applied'])
             self.assertIsNone(record['approval'])
             self.assertTrue(record['safety_removals_require_review'])
-            self.assertIn('- Never delete files.', (a / 'changes.diff').read_text())
+            self.assertIn('- Never delete files.', (a / 'changes.diff').read_text(encoding='utf-8'))
 
 
 if __name__ == '__main__':

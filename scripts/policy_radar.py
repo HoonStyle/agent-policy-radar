@@ -36,7 +36,7 @@ def main() -> int:
     sub.add_parser("scan", help="Inventory instruction files")
     sub.add_parser("overlap", help="Analyze overlaps from the inventory report")
     sub.add_parser("recommend", help="Generate markdown recommendations from overlap analysis")
-    sub.add_parser("all", help="Run sources, scan, overlap, and recommendation generation")
+    sub.add_parser("all", help="Run external checks and independent local analysis (MCP excluded)")
 
     review = sub.add_parser("review", help="Draft a prompt cleanup diff without modifying the original")
     review.add_argument("target")
@@ -53,10 +53,20 @@ def main() -> int:
                 parameters.extend(["--" + key.replace("_", "-"), value])
         return review_main(parameters)
     order = ["discover", "sources", "scan", "overlap", "recommend"] if args.command == "all" else [args.command]
+    external_failures = []
+    print('Scope: MCP configuration analysis is excluded.', flush=True)
     for name in order:
         code = run_step(name)
         if code != 0:
+            if args.command == "all" and name in ("discover", "sources"):
+                external_failures.append(name)
+                print(f'External step failed: {name} (exit {code}); continuing independent local analysis.', flush=True)
+                continue
+            print(f'Step failed: {name} (exit {code}); dependent steps not run.', flush=True)
             return code
+    if external_failures:
+        print('Partial result: local pipeline completed; external failures: ' + ', '.join(external_failures), flush=True)
+        return 1
     return 0
 
 
