@@ -52,21 +52,21 @@ This repo is structured for multiple agent surfaces:
 Claude Code marketplace install from this repo:
 
 ```bash
-claude plugin marketplace add HoonStyle/agent-policy-radar@v0.1.3
+claude plugin marketplace add HoonStyle/agent-policy-radar@v0.1.4
 claude plugin install agent-policy-radar@agent-policy-radar
 ```
 
 Codex marketplace install from this repo:
 
 ```bash
-codex plugin marketplace add HoonStyle/agent-policy-radar@v0.1.3
+codex plugin marketplace add HoonStyle/agent-policy-radar@v0.1.4
 codex plugin add agent-policy-radar@agent-policy-radar
 ```
 
 Pi install from GitHub:
 
 ```bash
-pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.3
+pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.4
 ```
 
 For local development, run this from the checked-out repository root:

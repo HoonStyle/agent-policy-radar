@@ -1,5 +1,8 @@
 {
   "targets": [
+    {"id": "claude-global", "scope": "global", "path": "~/.claude/CLAUDE.md"},
+    {"id": "codex-global", "scope": "global", "path": "~/.codex/AGENTS.md"},
+    {"id": "codex-global-override", "scope": "global", "path": "~/.codex/AGENTS.override.md"},
     {
       "id": "pi-global-agents-posix",
       "scope": "global",
@@ -17,6 +20,14 @@
     }
   ],
   "globs": [
+    {"scope": "project", "pattern": "~/Documents/*/CLAUDE.md"},
+    {"scope": "project", "pattern": "~/Documents/*/AGENTS.md"},
+    {"scope": "project", "pattern": "~/Documents/dev/*/CLAUDE.md"},
+    {"scope": "project", "pattern": "~/Documents/dev/*/AGENTS.md"},
+    {"scope": "skill", "pattern": "~/.claude/skills/*/SKILL.md"},
+    {"scope": "skill", "pattern": "~/.codex/skills/*/SKILL.md"},
+    {"scope": "skill", "pattern": "~/.claude/plugins/cache/*/*/*/skills/*/SKILL.md"},
+    {"scope": "skill", "pattern": "~/.codex/plugins/cache/*/*/*/skills/*/SKILL.md"},
     {
       "scope": "project",
       "pattern": "~/dev/*/AGENTS.md"
