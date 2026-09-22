@@ -100,6 +100,7 @@ def main() -> int:
     REPORT.parent.mkdir(parents=True, exist_ok=True)
 
     changes = []
+    results = []
     checked_at = now_iso()
 
     for src in registry.get("sources", []):
@@ -136,14 +137,16 @@ def main() -> int:
                 "keyword_hits": keyword_hits(text),
                 "excerpts": excerpt_changed_keywords(text),
             })
-            if changed or (first_seen and args.write_note_on_first):
+            item['status'] = 'first-seen' if first_seen else ('changed' if changed else 'unchanged')
+            if changed or first_seen:
                 changes.append(item)
         except Exception as e:  # noqa: BLE001 - CLI report should continue
-            item.update({"ok": False, "changed": False, "error": repr(e)})
+            item.update({"ok": False, "changed": False, "status": "failed", "error": repr(e)})
             changes.append(item)
+        results.append(item)
 
     STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    report = {"checked_at": checked_at, "changes": changes}
+    report = {"checked_at": checked_at, "results": results, "changes": changes}
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     if changes and not args.no_note:

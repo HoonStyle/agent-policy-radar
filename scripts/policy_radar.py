@@ -52,7 +52,7 @@ def main() -> int:
             if value:
                 parameters.extend(["--" + key.replace("_", "-"), value])
         return review_main(parameters)
-    order = ["sources", "scan", "overlap", "recommend"] if args.command == "all" else [args.command]
+    order = ["discover", "sources", "scan", "overlap", "recommend"] if args.command == "all" else [args.command]
     for name in order:
         code = run_step(name)
         if code != 0:

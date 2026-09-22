@@ -55,7 +55,9 @@ def excerpt_map(records):
                 text = hit.get("text", "").strip()
                 if not text:
                     continue
-                key = re.sub(r"\s+", " ", text.lower())[:160]
+                key = re.sub(r"\s+", " ", text.lower())
+                if text.startswith('#'):
+                    continue
                 sig = (key, r["path"], hit.get("line"), text)
                 if sig in seen:
                     continue
@@ -65,13 +67,8 @@ def excerpt_map(records):
 
 
 def recommendation_for(scopes: set[str], cats: list[str]) -> str:
-    if "global" in scopes and ("skill" in scopes or "telegram-skill" in scopes) and "global-safety" in cats:
-        return "Keep common safety rule globally; shorten skill text to reference the global rule unless the skill adds a stricter domain-specific constraint."
-    if "project" in scopes and "global" in scopes and "project-local" in cats:
-        return "Move project-specific detail down to the project instruction file; keep only the general principle globally."
-    if "model-harness" in cats:
-        return "Review against current Claude/Codex docs before editing; remove obsolete workaround only with approval."
-    return "Review manually; do not auto-edit."
+    # Similarity alone cannot establish authority, obsolescence or safe deletion.
+    return "Review needed: confirm actual loading scope, official guidance and observed behavior. Duplication alone does not justify removal."
 
 
 def has_conflict(texts: list[str]) -> bool:
@@ -114,9 +111,12 @@ def main() -> int:
             continue
         texts = [h["text"] for h in hits]
         cats = classify("\n".join(texts))
-        conflict = has_conflict(texts)
+        signal = has_conflict(texts)
+        conflict = False  # Keyword co-occurrence is not semantic conflict evidence.
         candidates.append({
-            "type": "policy-excerpt-overlap" if not conflict else "possible-conflict",
+            "type": "policy-excerpt-overlap",
+            "keyword_signal": signal,
+            "conflict_verified": False,
             "risk": "high" if conflict else ("medium" if len(scopes) > 1 else "low"),
             "categories": cats,
             "scopes": sorted(scopes, key=scope_rank),

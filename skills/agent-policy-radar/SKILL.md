@@ -62,7 +62,7 @@ py -3 scripts\policy_radar.py recommend
 
 ## Discover newly published guidance
 
-For requests about new models or newly available guidance, run `python3 scripts/policy_radar.py discover` from the package root (`py -3` on Windows). Read the returned local report. It finds candidate links in official indexes, not verified recommendations. First-seen does not mean newly published. Review relevant candidate pages and their dates before proposing source-registry changes or prompt edits. Index failures must be reported, not interpreted as no changes. This command is separate from `all`; there is no scheduler.
+For requests about new models or newly available guidance, run `python3 scripts/policy_radar.py discover` from the package root (`py -3` on Windows). Read the returned local report. It finds candidate links in official indexes, not verified recommendations. First-seen does not mean newly published. Review relevant candidate pages and their dates before proposing source-registry changes or prompt edits. Index failures must be reported, not interpreted as no changes. This command also runs first in `all`; there is no scheduler.
 
 ## Prompt cleanup (explicit request)
 
@@ -85,7 +85,7 @@ Summarize these files after running:
 - `reports/source_changes.json`
 - `reports/instruction_inventory.json`
 - `reports/overlap_analysis.md`
-- `recommendations/*.md`
+- `recommendations/current.json` and only the current run files it names; root-level drafts are historical
 
 For Telegram-originated turns, keep the reply concise and list the most important generated paths.
 
@@ -103,4 +103,5 @@ Always preserve this boundary:
 - Separate official source facts from local operational interpretation.
 - Treat model-specific prompting guides as review inputs, not automatic migration authority.
 - Treat duplicated safety text as a responsibility-separation candidate, not automatic deletion.
-- Prefer: global = common safety/operating principles; skill/MCP = domain-specific procedure; project = repo-local workflow.
+- Treat global/skill/project responsibility separation as a hypothesis to review, not a relocation instruction. Require actual loading-scope evidence before changing safety text.
+- Automated results are review candidates, not latest-model optimization findings. Link a relevant official passage and an observed failure before proposing a model-specific optimization. Disclose when either is missing.

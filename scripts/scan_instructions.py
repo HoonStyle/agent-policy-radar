@@ -55,16 +55,17 @@ def lines_matching(lines: list[str], terms: list[str]) -> list[dict]:
         low = line.lower()
         hits = [t for t in terms if t.lower() in low]
         if hits:
-            out.append({"line": i, "hits": hits, "text": line.strip()[:300]})
+            out.append({"line": i, "hits": hits, "text": line.strip()})
     return out
 
 
 def sentence_fingerprints(text: str) -> Counter:
-    chunks = re.split(r"[\n.!?。！？]+", text)
+    chunks = text.splitlines()
     c = Counter()
     for chunk in chunks:
         norm = re.sub(r"\s+", " ", chunk.strip().lower())
-        norm = re.sub(r"[`*_#>\-•\d\.\)\(\[\]]+", "", norm).strip()
+        # Preserve numbers, versions, operators and condition punctuation.
+        norm = norm.strip()
         if len(norm) >= 35:
             c[norm] += 1
     return c
@@ -80,6 +81,12 @@ def main() -> int:
     all_fp = Counter()
 
     for scope, path, tid in unique_paths(config):
+        # MCP config values may contain credentials. Do not read or excerpt them.
+        # Also reject arbitrary cache/config file types regardless of their label.
+        if scope == "mcp" or path.suffix.lower() != ".md":
+            records.append({"id": tid, "scope": scope, "path": str(path),
+                            "excluded": True, "reason": "configuration values are not instruction text"})
+            continue
         try:
             raw = path.read_bytes()
             truncated = len(raw) > args.max_bytes

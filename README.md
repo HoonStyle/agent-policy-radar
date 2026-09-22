@@ -126,7 +126,7 @@ python3 scripts/policy_radar.py discover
 
 Fetches four official `llms.txt` indexes (Claude Code, Anthropic platform, OpenAI developers, ChatGPT Learn) and extracts prompting/model/migration/instruction/release/changelog links. Only HTTPS links and redirects to explicitly allowed official hosts are accepted. Requests have timeouts and size limits, without retries or recursive crawling.
 
-Reports are preserved per run in `~/.agent-policy-radar/discovery/`. First-seen URLs are not necessarily new publications. Candidates require original-page review; discovery does not fetch their bodies, change the source registry, or edit instructions. Failures are recorded and return a nonzero status. `discover` is currently an explicit separate command, not part of `all` or a scheduled job.
+Reports are preserved per run in `~/.agent-policy-radar/discovery/`. First-seen URLs are not necessarily new publications. Candidates require original-page review; discovery does not fetch their bodies, change the source registry, or edit instructions. Failures are recorded and return a nonzero status. `discover` can run separately and is now the first step of `all`. Failures stop the pipeline rather than being interpreted as no changes. No scheduler is installed.
 
 ## Prompt cleanup review
 
@@ -138,6 +138,14 @@ python3 scripts/policy_radar.py review "path/to/CLAUDE.md" --proposal "path/to/d
 Use `py -3` on Windows. Outputs are unique private-local review directories under `~/.agent-policy-radar/reviews/` (override with `--output-dir`), outside the plugin cache. Each contains a proposed text, unified diff, original/proposed/patch hashes, and pending-review status. Originals are never edited; no apply command exists. Bundles contain potentially private excerpts: do not publish them automatically. POSIX permission bits are best-effort and do not substitute for Windows ACLs.
 
 Without a supplied proposal, cleanup is limited to adjacent identical plain bullets outside code fences, retaining safety-keyword matches. Broader shortening, moves, and semantic conflicts require agent/human review through the skill workflow and `--proposal`; the CLI does not claim to solve them automatically.
+
+## Analysis limits and current results
+
+This is an instruction-review assistant, not a validated latest-model optimization engine. Duplicate lines and keyword signals do not establish conflicts or justify deletion. Official guidance and observed behavior still require human/agent comparison before any optimization recommendation.
+
+`all` runs discovery, source checks, inventory, overlap analysis and draft generation in that order. Source reports distinguish first-seen, changed, unchanged and failed. Generated drafts live in `recommendations/runs/<id>/`; `recommendations/current.json` identifies the current run even with zero candidates. Older root-level drafts are historical and must not be used as current results.
+
+MCP-scoped files and non-Markdown configuration/cache files are excluded before reading their contents. For MCP instructions, explicitly select a sanitized Markdown instruction document instead. Markdown is not automatically secret-free; inspect before sharing. Previously generated reports may already contain private values: this fix does not retroactively sanitize local archives or Git history.
 
 ## CLI MVP
 

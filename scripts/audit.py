@@ -28,7 +28,8 @@ def save(path, data):
 def inventory():
     result = {}
     for directory, pattern in [('reports', '*.json'), ('reports', '*.md'),
-                               ('recommendations', '*.md'), ('data', 'source_state.json'),
+                               ('recommendations', '*.md'), ('recommendations', 'current.json'),
+                               ('recommendations', 'runs/*/*.md'), ('data', 'source_state.json'),
                                ('data/snapshots', '*.txt'), ('sources', '*-source-changes.md')]:
         for path in (ROOT / directory).glob(pattern):
             result[str(path.relative_to(ROOT))] = path.read_bytes()
