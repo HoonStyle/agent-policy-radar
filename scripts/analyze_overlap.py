@@ -68,7 +68,7 @@ def excerpt_map(records):
 
 def recommendation_for(scopes: set[str], cats: list[str]) -> str:
     # Similarity alone cannot establish authority, obsolescence or safe deletion.
-    return "Review needed: confirm actual loading scope, official guidance and observed behavior. Duplication alone does not justify removal."
+    return "Review needed: confirm actual loading scope, official guidance and observed behavior. Preserve personal preferences and intent; propose only minimal changes tied to evidenced conflicts or unwanted behavior. Duplication alone does not justify removal."
 
 
 def has_conflict(texts: list[str]) -> bool:

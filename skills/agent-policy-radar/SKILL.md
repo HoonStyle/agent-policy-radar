@@ -100,6 +100,9 @@ Always preserve this boundary:
 
 ## Interpretation rules
 
+- Preserve the user's personal preferences and intent (including language, tone, workflow, and risk tolerance within applicable safety boundaries). Brevity, duplication, or a provider's generic recommendation alone is not a reason to rewrite them.
+- For personal instructions, propose only the minimum change tied to an evidenced conflict or observed unwanted behavior. Explain that connection and what intent remains preserved. If evidence or intended meaning is unclear, ask rather than recommend changing the preference. Broader style cleanup requires an explicit user request.
+
 - Separate official source facts from local operational interpretation.
 - Treat model-specific prompting guides as review inputs, not automatic migration authority.
 - Treat duplicated safety text as a responsibility-separation candidate, not automatic deletion.
