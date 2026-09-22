@@ -13,6 +13,12 @@ It is not a benchmark suite by default. It is an operational note and review lay
 - standing instruction hygiene: `AGENTS.md`, `CLAUDE.md`, MCP server instructions, skills, project playbooks.
 - project-specific recommendations: what to shorten, split, remove, or keep.
 
+## Change History and Auditability
+
+- [CHANGELOG.md](CHANGELOG.md): release changes, reasons, commit evidence, verification limits.
+- [Audit trail proposal](recommendations/audit-trail.md): planned per-run records and approval/application evidence.
+- Current reports are overwritten on rerun; persistent execution auditing is **not implemented yet**.
+
 ## Core Principle
 
 Separate facts from interpretation.
