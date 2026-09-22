@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "agent-policy-radar",
   "displayName": "Agent Policy Radar",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Review Claude/Codex/Pi instruction hygiene, official guidance changes, and approval-gated policy recommendations.",
   "author": {
     "name": "HoonStyle",
