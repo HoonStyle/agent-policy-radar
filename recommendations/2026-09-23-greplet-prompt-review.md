@@ -1,6 +1,20 @@
 # greplet 프롬프트 검토 — 2026-09-23
 
-## 범위
+## 원격 기준 재검토 (로컬 실험본과 분리)
+
+사용자 확인에 따라 배포 판단 기준을 원격으로 교정했다. 아래 로컬 검토 기록은 경위로만 보존한다.
+
+- 원격: https://github.com/HoonStyle/greplet
+- 조회 시점 main: `99e85142e879c9571ed7c29cc7dc1a4e51532f62`
+- 최신 GitHub Release: `v0.11.2`, 게시 2026-09-11, commit `f95eb05fd2870de7de08309eaf2173019145bd65`
+- 별도 임시 clone에서 확인. 로컬 실험 checkout의 fetch/reset/수정 없음.
+- 아래 지적의 근거인 두 SKILL.md, MCP/ MCPB 서버, greplet.mjs, 시작 스크립트는 **원격 main과 v0.11.2 사이 동일**했다.
+- 두 SKILL.md, greplet.mjs, mcp-server/src/greplet.ts, 시작 스크립트는 앞서 읽은 로컬 파일과도 동일. MCP/MCPB 서버의 차이는 package.json에서 버전을 읽는 부분이며 이번 도구 설명 판단에는 영향 없음. 원격 mcp-server/src/index.ts의 evidence 도구 관련 줄은 기존 인용보다 +2행(117–171, 기본 all은 128).
+- 해당 경로 묶음에서 릴리즈→main 변화는 examples/codex/README.md뿐: FTS/Ollama 안내 수정과 evidence 도구 포함 4개 목록으로 보완. **README 목록은 이미 개선됐으므로 다시 수정 대상으로 삼지 않는다.** SKILL의 evidence 경로 안내 누락은 그대로 남음.
+
+재판정: 아래 1–5 문구/예제 후보는 원격 main과 최신 릴리즈에서도 확인된다. 가장 직접적인 예제 오류는 3번의 `--all --workspace docs` 조합이다. 나머지는 근거 신선도·검색 보완·운영 경계·성능 표현의 문구 개선 후보이며 실제 새 모델 오동작/성능을 측정한 결과가 아니다. 릴리즈 소스 태그를 대조했으며 배포 바이너리/번들 전부를 실행하거나 검사한 것은 아니다.
+
+## 최초 로컬 검토 범위 (배포 판단 근거로 단독 사용하지 않음)
 
 `greplet` HEAD `3fda3e7`의 현재 작업 폴더 기준. README/indexer 소스 등에 미커밋 변경과 여러 미추적 문서가 있어 HEAD만으로 현재 상태 전체를 식별할 수 없다. 본 검토는 아래 예제 skill 및 MCP 도구 설명과 관련 CLI 구현을 읽은 정적 검토다. 서비스 기동·재인덱싱·DB 읽기/쓰기·모델 호출·검색 성능 시험은 하지 않았다. 대상 root/깊이 2 이내 AGENTS.md/CLAUDE.md는 발견되지 않았다.
 
