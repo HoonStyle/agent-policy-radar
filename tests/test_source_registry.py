@@ -12,7 +12,7 @@ class RegistryTests(unittest.TestCase):
         self.assertEqual(len(sources), len({s['id'] for s in sources}))
         self.assertEqual(len(sources), len({s['url'] for s in sources}))
         hosts = {'platform.claude.com', 'code.claude.com', 'developers.openai.com',
-                 'cookbook.openai.com', 'modelcontextprotocol.io'}
+                 'cookbook.openai.com', 'learn.chatgpt.com', 'modelcontextprotocol.io'}
         for source in sources:
             url = urlsplit(source['url'])
             self.assertEqual(url.scheme, 'https')
@@ -23,6 +23,6 @@ class RegistryTests(unittest.TestCase):
         sources = {s['id']: s for s in json.loads((ROOT / 'data/source_registry.json').read_text(encoding='utf-8'))['sources']}
         required = {'anthropic-release-notes', 'claude-opus55-prompting', 'claude-opus55-migration',
                     'openai-release-notes', 'openai-latest-model', 'openai-gpt6-sol',
-                    'openai-gpt6-luna', 'openai-codex-models'}
+                    'openai-gpt6-luna', 'openai-gpt61-sol', 'openai-codex-models'}
         self.assertTrue(required <= sources.keys())
         self.assertIn('Historical reference', sources['openai-gpt5-prompting-guide']['label'])

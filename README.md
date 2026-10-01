@@ -6,11 +6,15 @@ Claude Code와 Codex에서 필요한 플러그인만 설치합니다. 각 회사
 
 [릴리즈](https://github.com/HoonStyle/agent-policy-radar/releases) · [변경 이력](CHANGELOG.md) · [이슈·피드백](https://github.com/HoonStyle/agent-policy-radar/issues)
 
+## 최신 모델 지침 확인
+
+2026-10-01 기준 GPT-6.1 Sol(9월 29일), Opus 5.5(9월 22일), Sonnet 5.5(9월 28일)의 공식 안내를 추적합니다. GPT-6 Sol과 6.1 Sol의 API 호환 조건을 구분하며, 출시만으로 개인 지침이나 effort를 자동 변경하지 않습니다. Sonnet 4.5의 Claude API 종료 예정일은 11월 30일입니다. [최신 근거·적용 범위](sources/2026-10-01-model-guidance.md) · [Claude 모델별 차이](sources/2026-09-29-opus-sonnet55-guidance.md)
+
 ## 무엇을 설치하면 되나요?
 
 | 플러그인 | 용도 | 현재 릴리즈 버전 |
 | --- | --- | --- |
-| **`agent-policy-radar`** | 공식 문서 변화 확인, 로컬 지침의 중복 후보·정리안 검토 | 0.1.15 |
+| **`agent-policy-radar`** | 공식 문서 변화 확인, 로컬 지침의 중복 후보·정리안 검토 | 0.1.16 |
 | **`review-workflow`** | 리뷰 지적을 정리하고 수정·재검증이 끝없이 반복되는 상황 관리 | 0.2.1 |
 | **`paper-research`** | 문헌 탐색부터 논문 집필까지 연구 단계별 보조, 간호학 참고 문서 포함 | 0.1.1 |
 
@@ -71,7 +75,7 @@ codex plugin list
 루트의 Policy Radar 스킬은 Pi 패키지로도 설치할 수 있습니다.
 
 ```sh
-pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.15
+pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.16
 ```
 
 이 명령은 버전 고정 설치이며, 선택형 두 플러그인을 Pi 스킬로 자동 등록하지 않습니다. npm 배포·갤러리 등재를 의미하지도 않습니다.
@@ -220,7 +224,7 @@ python3 scripts/policy_radar.py review "path/to/CLAUDE.md" --proposal "path/to/d
 - 커스텀 대상은 `data/instruction_targets.json`에서 확인합니다. 설치 캐시를 직접 수정하면 업데이트 때 사라질 수 있으므로 사용자 관리 checkout에서 설정하거나 upstream 개선을 제안하세요. 범용 외부 설정 파일 지원은 아직 없습니다.
 - **MCP 설정 분석은 현재 제외**됩니다. 설정값을 원문으로 수집하지 않으며, 복원 여부는 별도로 결정합니다.
 - `discover`는 공식 링크 후보를 찾을 뿐 본문을 검증하거나 registry에 자동 등록하지 않습니다. ‘최초 발견’은 ‘새로 출판됨’을 뜻하지 않습니다.
-- 등록된 추적 대상에는 Opus 5.5 prompting/migration, GPT-6 통합 가이드·Sol/Luna 모델 문서, 양사 릴리즈 노트 및 Codex 모델 안내가 포함됩니다. GPT-5 가이드는 과거 참고 자료로 구분합니다. API 변경과 하네스 지침을 구분하고, Astra 관측 기반 권고를 Sol/Luna에서 검증된 행동으로 간주하지 않습니다. `cadence`는 참고 메타데이터이며 스케줄러가 아닙니다. 사이트가 403 등으로 조회를 거부하면 실패로 보고하며 등록 자체가 조회 성공을 보장하지 않습니다.
+- 등록된 추적 대상에는 Opus/Sonnet 5.5 prompting/migration, GPT-6 통합 가이드·Sol/6.1 Sol/Luna 모델 문서, 양사 릴리즈 노트 및 Codex 모델 안내가 포함됩니다. GPT-5 가이드는 과거 참고 자료로 구분합니다. API 변경과 하네스 지침을 구분하고, Astra 관측 기반 권고를 Sol/Luna에서 검증된 행동으로 간주하지 않습니다. `cadence`는 참고 메타데이터이며 스케줄러가 아닙니다. 사이트가 403 등으로 조회를 거부하면 실패로 보고하며 등록 자체가 조회 성공을 보장하지 않습니다.
 - `sources`의 변경은 저장된 snapshot 대비 변화입니다. 설치 패키지의 과거 기준선과 달라진 것일 수도 있습니다.
 - 문서 확인은 명시 실행형입니다. 정기 실행·새 모델 감지 알림·백그라운드 자동 최적화는 없습니다.
 
