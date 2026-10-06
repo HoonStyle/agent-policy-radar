@@ -8,13 +8,13 @@ Claude Code와 Codex에서 필요한 플러그인만 설치합니다. 각 회사
 
 ## 최신 모델 지침 확인
 
-2026-10-01 기준 GPT-6.1 Sol(9월 29일), Opus 5.5(9월 22일), Sonnet 5.5(9월 28일)의 공식 안내를 추적합니다. GPT-6 Sol과 6.1 Sol의 API 호환 조건을 구분하며, 출시만으로 개인 지침이나 effort를 자동 변경하지 않습니다. Sonnet 4.5의 Claude API 종료 예정일은 11월 30일입니다. [최신 근거·적용 범위](sources/2026-10-01-model-guidance.md) · [Claude 모델별 차이](sources/2026-09-29-opus-sonnet55-guidance.md)
+2026-10-06 기준 GPT-6.1 Sol(9월 29일), Opus 5.5(9월 22일), Sonnet 5.5(9월 28일)의 공식 안내를 추적합니다. GPT-6 Sol과 6.1 Sol의 API 호환 조건을 구분하며, 출시만으로 개인 지침이나 effort를 자동 변경하지 않습니다. Sonnet 4.5의 Claude API 종료 예정일은 11월 30일입니다. [모델 근거·적용 범위](sources/2026-10-01-model-guidance.md) · [10월 6일 변경 안내](sources/2026-10-06-guidance-update.md) · [Claude 모델별 차이](sources/2026-09-29-opus-sonnet55-guidance.md)
 
 ## 무엇을 설치하면 되나요?
 
 | 플러그인 | 용도 | 현재 릴리즈 버전 |
 | --- | --- | --- |
-| **`agent-policy-radar`** | 공식 문서 변화 확인, 로컬 지침의 중복 후보·정리안 검토 | 0.1.16 |
+| **`agent-policy-radar`** | 공식 문서 변화 확인, 로컬 지침의 중복 후보·정리안 검토 | 0.1.17 |
 | **`review-workflow`** | 리뷰 지적을 정리하고 수정·재검증이 끝없이 반복되는 상황 관리 | 0.2.1 |
 | **`paper-research`** | 문헌 탐색부터 논문 집필까지 연구 단계별 보조, 간호학 참고 문서 포함 | 0.1.1 |
 
@@ -75,7 +75,7 @@ codex plugin list
 루트의 Policy Radar 스킬은 Pi 패키지로도 설치할 수 있습니다.
 
 ```sh
-pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.16
+pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.17
 ```
 
 이 명령은 버전 고정 설치이며, 선택형 두 플러그인을 Pi 스킬로 자동 등록하지 않습니다. npm 배포·갤러리 등재를 의미하지도 않습니다.

@@ -146,6 +146,27 @@
       "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol.md",
       "kind": "model-reference",
       "cadence": "weekly"
+    },
+    {
+      "id": "openai-deprecations",
+      "label": "OpenAI API deprecations (API shutdown dates; not ChatGPT retirement)",
+      "url": "https://developers.openai.com/api/docs/deprecations.md",
+      "kind": "deprecations",
+      "cadence": "weekly"
+    },
+    {
+      "id": "openai-codex-changelog",
+      "label": "ChatGPT and Codex changelog (client releases; not local validation)",
+      "url": "https://learn.chatgpt.com/docs/changelog",
+      "kind": "release-notes",
+      "cadence": "weekly"
+    },
+    {
+      "id": "claude-code-changelog",
+      "label": "Claude Code changelog (harness releases; not local validation)",
+      "url": "https://code.claude.com/docs/en/changelog.md",
+      "kind": "release-notes",
+      "cadence": "weekly"
     }
   ]
 }
