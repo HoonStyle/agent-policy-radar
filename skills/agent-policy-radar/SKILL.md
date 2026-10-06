@@ -5,7 +5,7 @@ description: Review model/harness prompt guidance and local instruction hygiene.
 
 # Agent Policy Radar
 
-Use this skill as a thin wrapper around the local `agent-policy-radar` CLI. The CLI produces source notes, findings, and recommendations only; it must not silently edit global instructions, project files, skills, or MCP configs.
+Use the local `agent-policy-radar` CLI to collect evidence; the agent must interpret relevant changes against the actual instructions and review criteria. CLI reports alone are not a completed policy review. The CLI produces source notes, findings, and recommendations only; it must not silently edit global instructions, project files, skills, or MCP configs.
 
 ## Repository and path handling
 
@@ -64,6 +64,30 @@ py -3 scripts\policy_radar.py recommend
 
 For requests about new models or newly available guidance, run `python3 scripts/policy_radar.py discover` from the package root (`py -3` on Windows). Read the returned local report. It finds candidate links in official indexes, not verified recommendations. First-seen does not mean newly published. Review relevant candidate pages and their dates before proposing source-registry changes or prompt edits. Index failures must be reported, not interpreted as no changes. This command also runs first in `all`; there is no scheduler.
 
+## Update review: from changes to decisions
+
+For a general request to review updates, review relevant provider guidance against the affected instructions. Inspect this package's own review/editing criteria when the user requests it or an actual review reveals a missed change or unsupported verdict. A source-only request may stop at source findings; do not silently narrow a policy update review to collecting URLs.
+
+Use the authorized task scope and existing target configuration to locate affected instructions. Read the relevant passages and establish the model, harness/API surface, loading scope, and version conditions. Do not scan unrelated projects or private memory. If a necessary target is inaccessible or its loading is unknown, name that gap and defer that target's verdict; do not conclude that its instructions need no changes.
+
+For material changes, connect the official passage or observed failure to the actual target rule (or missing coverage), then decide keep, revise, remove, or defer. Record the reason and a minimal proposed replacement for change candidates. An existing rule that already covers the change is evidence for keeping it; a source-change count is not. Use a short finding rather than a mandatory ledger for small changes.
+
+Distinguish the evidence needed for the decision:
+
+- **Documented correctness:** An obsolete factual claim, changed loading condition, or API incompatibility can justify correcting the affected guidance from current official evidence and confirmed applicability. A model failure is not required to correct a fact.
+- **Behavioral compensation:** New prompt restrictions, effort changes, or provider-specific workarounds require an observed problem in the relevant environment. Validate a proposed remedy on a small representative task when feasible; otherwise label its effect unverified, not improved.
+- **Radar's own criteria:** If a real review missed an applicable change or produced an unsupported verdict, inspect the rule that led to it and propose a scoped correction to this skill. Do not merely append the new URL or add one rule per release. Apply repository-owned skill changes when the user requests them; this does not authorize changes to other targets.
+
+Before completing the review, check the proposed decision against the actual evidence and preserve user intent and approval boundaries. For changed behavioral criteria, use representative cases, including a case that should remain unchanged; distinguish a desk review from a fresh model/workload test. Do not repeat costly experiments just to create an update.
+
+Lead the report with a concrete decision and scope: policy/criteria update, source maintenance only, no change warranted, or incomplete review. State what was actually compared and validated. Recommend a release for the identified user benefit, not merely because documents changed. Collection success and CI do not prove better agent behavior.
+
+## Harness-specific instruction checks
+
+For findings that depend on Claude Code instruction loading, distinguish files found on disk from files loaded into the session. Check only the relevant loading conditions in the current [memory reference](https://code.claude.com/docs/en/memory), using `/context` or available session evidence rather than inventory alone. Read/Write/Edit may trigger on-demand loading; missing Read history alone does not prove non-loading. Check session-specific auto-memory behavior only for auto-memory findings. A file not loaded in the current session is not evidence of duplicate loading there; assess its actual usage before proposing removal. Do not transfer Claude-specific conditions to other harnesses.
+
+For Claude Code prompt audits, suggest the built-in `/doctor prompt-audit <path>` where available, or reuse an existing relevant result before duplicating work. Consult the current memory reference for availability and prerequisites rather than fixing version details here. Any execution remains subject to the authorized target scope and existing data/cost permissions; otherwise continue with local inspection. Verify findings as candidates, not automatic edit approval. An additional audit or model call is not required.
+
 ## Prompt cleanup (explicit request)
 
 For cleanup requests, do not stop at an overlap count. Read the explicitly selected instruction files locally. Identify which harness actually loads each file; if authority or loading is unknown, ask rather than infer priority from directory depth.
@@ -115,4 +139,4 @@ Complete requested investigation, analysis and reviewable drafts before waiting 
 - Treat model-specific prompting guides as review inputs, not automatic migration authority.
 - Treat duplicated safety text as a responsibility-separation candidate, not automatic deletion.
 - Treat global/skill/project responsibility separation as a hypothesis to review, not a relocation instruction. Require actual loading-scope evidence before changing safety text.
-- Automated results are review candidates, not latest-model optimization findings. Link a relevant official passage and an observed failure before proposing a model-specific optimization. Disclose when either is missing.
+- Automated results are review candidates, not latest-model optimization findings. Use the evidence requirements above: official corrections and behavioral optimizations are different decisions. Disclose missing applicability or validation evidence.
