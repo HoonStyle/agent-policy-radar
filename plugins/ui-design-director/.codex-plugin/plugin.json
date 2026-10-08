@@ -1,0 +1,10 @@
+{
+  "name": "ui-design-director",
+  "version": "0.2.0",
+  "author": {
+    "name": "Hoon Lim"
+  },
+  "description": "Coherent English/Korean UI, PowerPoint, and Word design with shared color and typography, medium-specific workflows, and evidence-based review.",
+  "skills": "./skills/",
+  "license": "MIT"
+}

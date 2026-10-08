@@ -1,0 +1,4 @@
+interface:
+  display_name: "Document Design"
+  short_description: "한영 Word의 문단 스타일·표·페이지 흐름과 문서 디자인 검수"
+  default_prompt: "Use $document-design to refine this Word document's hierarchy, typography, tables, and pagination while preserving its content and links."

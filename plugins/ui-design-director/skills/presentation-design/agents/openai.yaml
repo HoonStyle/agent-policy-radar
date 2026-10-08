@@ -1,0 +1,4 @@
+interface:
+  display_name: "Presentation Design"
+  short_description: "한영 PPT의 발표 흐름·슬라이드 구도·컬러와 편집성 검수"
+  default_prompt: "Use $presentation-design to refine this deck's narrative, typography, and color system while preserving its facts and editable content."

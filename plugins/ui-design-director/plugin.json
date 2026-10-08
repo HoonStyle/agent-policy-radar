@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ui-design-director",
+  "version": "0.2.0",
+  "author": {
+    "name": "Hoon Lim"
+  },
+  "description": "Coherent English/Korean UI, PowerPoint, and Word design with shared color and typography, medium-specific workflows, and evidence-based review.",
+  "keywords": [
+    "design",
+    "ui",
+    "ux",
+    "color",
+    "accessibility"
+  ],
+  "license": "MIT"
+}

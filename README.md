@@ -2,7 +2,7 @@
 
 **English** | [한국어](README.ko.md)
 
-**Optional skills for instruction audits, development reviews, and research workflows.**
+**Optional skills for instruction audits, development reviews, research, and UI/document design workflows.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-D97757)
@@ -14,11 +14,12 @@ Install only the plugins you need. Agent Policy Radar favors the host's native b
 
 ## Plugins
 
-| Plugin | Purpose | Release version |
+| Plugin | Purpose | Version |
 | --- | --- | --- |
-| **`agent-policy-radar`** | Track official guidance and review local instruction inventories, overlap candidates, and proposed edits. | 0.1.17 |
+| **`agent-policy-radar`** | Track official guidance and review local instruction inventories, overlap candidates, and proposed edits. | 0.1.18 |
 | **`review-workflow`** | Organize review findings, fixes, and verification without an endless review loop. | 0.2.1 |
 | **`paper-research`** | Assist with literature review, research planning, analysis, and writing; includes optional nursing research references. | 0.1.1 |
+| **`ui-design-director`** | Design and review English/Korean UI, PowerPoint, and Word with shared color and typography. | 0.2.0 (main; not tagged) |
 
 These plugins are independent. Installing or updating the base plugin does not install the others. If you only need research assistance, install `paper-research` alone.
 
@@ -44,6 +45,7 @@ claude plugin marketplace add HoonStyle/agent-policy-radar@main
 claude plugin install agent-policy-radar@agent-policy-radar
 claude plugin install review-workflow@agent-policy-radar
 claude plugin install paper-research@agent-policy-radar
+claude plugin install ui-design-director@agent-policy-radar
 ```
 
 ### Codex
@@ -54,6 +56,7 @@ codex plugin marketplace add HoonStyle/agent-policy-radar --ref main
 codex plugin add agent-policy-radar@agent-policy-radar
 codex plugin add review-workflow@agent-policy-radar
 codex plugin add paper-research@agent-policy-radar
+codex plugin add ui-design-director@agent-policy-radar
 ```
 
 Start a **new session** after installation. Check the installed plugins with `claude plugin list` or `codex plugin list`.
@@ -66,7 +69,7 @@ The root Policy Radar skill is also available as a version-pinned Pi package:
 pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.17
 ```
 
-This does not automatically register the two optional plugins as Pi skills and does not imply npm publication or gallery listing.
+This does not automatically register the optional plugins as Pi skills and does not imply npm publication or gallery listing.
 
 ### Desktop, mobile, and remote sessions
 
@@ -124,6 +127,18 @@ The skill must not invent citations, DOIs, statistics, or experimental results. 
 
 It is **not** an SPSS/AMOS/R execution engine, automatic data-collection service, or IRB decision tool. Without the required tools and permissions, outputs remain plans or drafts. It does not replace clinical, statistical, or ethics expertise. External transmission of participant data or private manuscripts requires appropriate permission and institutional-policy checks.
 
+### Design Director: UI, PowerPoint, and Word
+
+Install `ui-design-director` to get three skills: `design-director` for UI, `presentation-design` for slide decks, and `document-design` for flowing documents. English and Korean share design foundations but keep medium-specific layout and review workflows.
+
+> Use `design-director` to coordinate this UI’s palette while preserving its layout and behavior.
+
+> Use `presentation-design` to improve this deck’s story and composition, preserving its template and editable charts.
+
+> Use `document-design` to refine this report’s headings, tables, and page flow without changing its content or links.
+
+The optional offline palette helper needs Python 3.9+. This package supplies no browser, Office engine, renderer, hooks, or background service. It uses the host’s existing authoring and rendering tools. Package/UI checks are recorded; actual PPTX/DOCX creation, rendering, and installed-host activation remain unverified. See the [plugin guide](plugins/ui-design-director/README.md) and [verification scope](plugins/ui-design-director/VERIFICATION.md).
+
 ## Updates
 
 The Claude/Codex marketplace commands above track `main`. Discovering updates does not guarantee automatic installation or cross-device synchronization. Update only the plugins you use:
@@ -134,12 +149,14 @@ claude plugin marketplace update agent-policy-radar
 claude plugin update agent-policy-radar@agent-policy-radar
 claude plugin update review-workflow@agent-policy-radar
 claude plugin update paper-research@agent-policy-radar
+claude plugin update ui-design-director@agent-policy-radar
 
 # Codex
 codex plugin marketplace upgrade agent-policy-radar
 codex plugin add agent-policy-radar@agent-policy-radar
 codex plugin add review-workflow@agent-policy-radar
 codex plugin add paper-research@agent-policy-radar
+codex plugin add ui-design-director@agent-policy-radar
 ```
 
 Codex `add` also installs missing plugins. Start a new session and check the plugin list afterward. Moving from a pinned marketplace tag to `main` may require re-registration; removing a marketplace can also remove its plugins, so inspect installed plugins first.
@@ -207,7 +224,7 @@ See [PRIVACY.md](PRIVACY.md) and [TERMS.md](TERMS.md).
 
 ## Validation and evidence
 
-Recorded checks include macOS/Windows CLI plugin installation and activation, a complete Windows Policy Radar run, fixture regressions, simulated research requests, and selected-page citation/numerical checks for two JMLR papers.
+For the pre-existing plugins, recorded checks include macOS/Windows CLI plugin installation and activation, a complete Windows Policy Radar run, fixture regressions, simulated research requests, and selected-page citation/numerical checks for two JMLR papers.
 
 These checks do not establish better model performance, exhaustive literature searches, correctness across research fields, clinical/statistical validity, IRB suitability, actual SPSS/AMOS execution, or automatic app/mobile/cloud synchronization. Installation checks and research-quality evidence are different. See [findings/](findings/) for results and limitations.
 
@@ -240,6 +257,7 @@ plugin.json                 Portable base plugin manifest
 skills/agent-policy-radar/   Base audit skill
 plugins/review-workflow/     Optional review skill and recording CLI
 plugins/paper-research/      Optional research skill and references
+plugins/ui-design-director/  Optional UI, PowerPoint, and Word design skills
 scripts/                    Policy Radar CLI
 tests/                      Regression tests
 sources/                    Official guidance records

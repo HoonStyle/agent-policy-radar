@@ -4,7 +4,7 @@
 
 [설치](#설치) · [플러그인 선택](#무엇을-설치하면-되나요) · [사용하기](#사용하기) · [개인정보](#결과와-개인정보) · [검증 범위](#검증한-것과-아직-검증하지-않은-것)
 
-**에이전트 지침 점검, 개발 리뷰, 논문 연구를 위한 선택형 스킬 마켓입니다.**
+**에이전트 지침 점검, 개발 리뷰, 논문 연구, UI·문서 디자인을 위한 선택형 스킬 마켓입니다.**
 
 Claude Code와 Codex에서 필요한 플러그인만 설치합니다. 각 회사의 기본 하네스를 우선하며, 확인된 문제에만 최소한으로 보완합니다. 설치했다고 모든 작업에 긴 절차를 강제하거나 개인 지침을 자동 수정하지 않습니다.
 
@@ -16,13 +16,14 @@ Claude Code와 Codex에서 필요한 플러그인만 설치합니다. 각 회사
 
 ## 무엇을 설치하면 되나요?
 
-| 플러그인 | 용도 | 현재 릴리즈 버전 |
+| 플러그인 | 용도 | 버전 |
 | --- | --- | --- |
-| **`agent-policy-radar`** | 공식 문서 변화 확인, 로컬 지침의 중복 후보·정리안 검토 | 0.1.17 |
+| **`agent-policy-radar`** | 공식 문서 변화 확인, 로컬 지침의 중복 후보·정리안 검토 | 0.1.18 |
 | **`review-workflow`** | 리뷰 지적을 정리하고 수정·재검증이 끝없이 반복되는 상황 관리 | 0.2.1 |
 | **`paper-research`** | 문헌 탐색부터 논문 집필까지 연구 단계별 보조, 간호학 참고 문서 포함 | 0.1.1 |
+| **`ui-design-director`** | 한영 UI·PPT·Word의 구조·컬러·타이포와 매체별 디자인 검수 | 0.2.0 (main; 미태그) |
 
-**논문 작업만 한다면 `paper-research`만 설치하면 됩니다.** 세 플러그인은 서로 필수 의존성이 아닙니다. 기본 플러그인 설치나 업데이트가 다른 플러그인을 자동 설치하지 않습니다.
+**논문 작업만 한다면 `paper-research`만 설치하면 됩니다.** 각 플러그인은 서로 필수 의존성이 아닙니다. 기본 플러그인 설치나 업데이트가 다른 플러그인을 자동 설치하지 않습니다.
 
 > Policy Radar는 **지침 점검 보조 도구**입니다. 최신 모델에 맞춘 최적화를 보증하거나, 중복 문구를 자동으로 삭제하는 도구가 아닙니다.
 
@@ -46,6 +47,7 @@ claude plugin marketplace add HoonStyle/agent-policy-radar@main
 claude plugin install agent-policy-radar@agent-policy-radar
 claude plugin install review-workflow@agent-policy-radar
 claude plugin install paper-research@agent-policy-radar
+claude plugin install ui-design-director@agent-policy-radar
 ```
 
 ### Codex
@@ -57,6 +59,7 @@ codex plugin marketplace add HoonStyle/agent-policy-radar --ref main
 codex plugin add agent-policy-radar@agent-policy-radar
 codex plugin add review-workflow@agent-policy-radar
 codex plugin add paper-research@agent-policy-radar
+codex plugin add ui-design-director@agent-policy-radar
 ```
 
 설치 후 **새 세션을 시작**하세요. 다음 명령으로 설치 버전과 활성화 상태를 확인할 수 있습니다.
@@ -82,7 +85,7 @@ codex plugin list
 pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.17
 ```
 
-이 명령은 버전 고정 설치이며, 선택형 두 플러그인을 Pi 스킬로 자동 등록하지 않습니다. npm 배포·갤러리 등재를 의미하지도 않습니다.
+이 명령은 버전 고정 설치이며, 선택형 플러그인을 Pi 스킬로 자동 등록하지 않습니다. npm 배포·갤러리 등재를 의미하지도 않습니다.
 
 ## 사용하기
 
@@ -161,6 +164,18 @@ Codex: 설치된 Paper Research 스킬을 명시해 요청합니다.
 - **SPSS/AMOS/R 실행 엔진, 자동 자료 수집 서비스, IRB 판단 도구가 아닙니다.** 실제 실행·라이선스·권한이 없다면 계획/초안과 미실행 상태를 제공합니다.
 - 환자·참여자 자료, 비공개 원고의 외부 전송에는 별도 권한과 기관 정책 확인이 필요합니다. 임상·통계·윤리 전문가의 판단을 대체하지 않습니다.
 
+### 4. Design Director — UI·PPT·Word 디자인
+
+`ui-design-director` 하나에 `design-director`(UI), `presentation-design`(PPT), `document-design`(Word) 세 스킬이 포함됩니다. 한영 컬러·타이포 기준을 공유하고 화면·슬라이드·문서 페이지별 제작·검수는 구분합니다.
+
+> `design-director`로 배치와 기능은 유지하면서 이 화면의 컬러셋과 상태색을 맞춰 주세요.
+
+> `presentation-design`으로 PPT의 메시지 흐름과 구도를 정리하되 템플릿과 편집 가능한 차트를 유지해 주세요.
+
+> `document-design`으로 보고서의 제목·표·페이지 흐름을 다듬되 내용과 링크를 보존해 주세요.
+
+선택형 오프라인 컬러 도구는 Python 3.9 이상이 필요합니다. 브라우저·Office 생성 엔진·렌더러·자동 훅·백그라운드 서비스는 포함하지 않으며 호스트의 기존 제작 도구를 활용합니다. UI·패키지 검증과 **실제 PPTX/DOCX 생성·렌더링 및 설치 후 활성화 미검증**을 구분합니다. [사용법](plugins/ui-design-director/README.md) · [검증 범위](plugins/ui-design-director/VERIFICATION.md)
+
 ## 업데이트
 
 Claude/Codex 마켓은 `main`을 추적합니다. 마켓 갱신으로 새 버전을 발견할 수 있지만 **자동 설치나 다른 기기로의 동기화를 보장하지 않습니다.** 필요한 설치 항목만 업데이트하세요.
@@ -171,12 +186,14 @@ claude plugin marketplace update agent-policy-radar
 claude plugin update agent-policy-radar@agent-policy-radar
 claude plugin update review-workflow@agent-policy-radar
 claude plugin update paper-research@agent-policy-radar
+claude plugin update ui-design-director@agent-policy-radar
 
 # Codex
 codex plugin marketplace upgrade agent-policy-radar
 codex plugin add agent-policy-radar@agent-policy-radar
 codex plugin add review-workflow@agent-policy-radar
 codex plugin add paper-research@agent-policy-radar
+codex plugin add ui-design-director@agent-policy-radar
 ```
 
 Codex의 `add`는 미설치 항목도 설치하므로 원하는 것만 실행하세요. 이후 새 세션을 시작하고 목록에서 버전을 확인합니다.
@@ -256,7 +273,7 @@ Windows의 `~`는 사용자 홈입니다. 상세 Review Workflow ledger는 사�
 ## 검증한 것과 아직 검증하지 않은 것
 
 **확인한 범위**
-- macOS·Windows의 CLI 플러그인 설치·활성화 및 Windows Policy Radar 전체 점검
+- 기존 플러그인의 macOS·Windows CLI 설치·활성화 및 Windows Policy Radar 전체 점검 (신규 디자인 플러그인 제외)
 - 오탐·결과 잔존·설정 제외·기록 도구 등의 fixture 회귀 테스트
 - 논문 스킬의 모의 요청 검증, 실제 JMLR 논문 2편의 선택 페이지 기반 관련 연구 문단·인용·수치 대조
 
@@ -291,6 +308,7 @@ plugin.json              기본 portable plugin manifest
 skills/agent-policy-radar/  기본 점검 스킬
 plugins/review-workflow/    선택형 개발 리뷰 스킬·기록 CLI
 plugins/paper-research/     선택형 논문 연구 스킬·참고 문서
+plugins/ui-design-director/ 선택형 UI·PPT·Word 디자인 스킬
 scripts/                 Policy Radar CLI
 tests/                   회귀 테스트
 sources/                 공식 문서 기록

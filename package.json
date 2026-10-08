@@ -26,6 +26,7 @@
   },
   "files": [
     "README.md",
+    "README.ko.md",
     "AGENTS.md",
     "LICENSE",
     "PRIVACY.md",
@@ -39,11 +40,14 @@
     "skills/**",
     "plugins/review-workflow/**",
     "plugins/paper-research/**",
+    "plugins/ui-design-director/**",
     "!**/__pycache__/**",
     "!**/*.pyc",
     "sources/**",
     "findings/**",
-    "recommendations/policy-radar-automation-plan.md"
+    "recommendations/policy-radar-automation-plan.md",
+    "!plugins/ui-design-director/dist/**",
+    "!plugins/ui-design-director/artifacts/**"
   ],
   "pi": {
     "skills": [

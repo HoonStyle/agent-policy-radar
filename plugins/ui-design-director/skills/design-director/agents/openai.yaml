@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Director"
+  short_description: "제품별 UI 방향·컬러셋·한영 타이포와 실제 화면 검수"
+  default_prompt: "Use $design-director to refine this UI's structure, typography, and color system while preserving its working behavior."

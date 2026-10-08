@@ -5,8 +5,22 @@
   },
   "plugins": [
     {
+      "name": "ui-design-director",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ui-design-director"
+      },
+      "interface": {
+        "displayName": "Design Director (Optional)",
+        "shortDescription": "English/Korean UI, PowerPoint and Word design with shared color and typography."
+      }
+    },
+    {
       "name": "paper-research",
-      "source": {"source": "local", "path": "./plugins/paper-research"},
+      "source": {
+        "source": "local",
+        "path": "./plugins/paper-research"
+      },
       "interface": {
         "displayName": "Paper Research (Optional)",
         "shortDescription": "Literature discovery, appraisal, reproduction and academic writing."
@@ -14,7 +28,10 @@
     },
     {
       "name": "review-workflow",
-      "source": {"source": "local", "path": "./plugins/review-workflow"},
+      "source": {
+        "source": "local",
+        "path": "./plugins/review-workflow"
+      },
       "interface": {
         "displayName": "Review Workflow (Optional)",
         "shortDescription": "Evidence-based reviews, finding ledger, and fix verification."

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "name": "Paper & Olive",
+  "themes": {
+    "light": {
+      "tokens": {
+        "canvas": "#F4F3EB",
+        "surface": "#FFFFFF",
+        "surface-alt": "#EBECE1",
+        "text": "#22291F",
+        "muted": "#596050",
+        "line": "#D6D9CC",
+        "control-border": "#7A8270",
+        "accent": "#3F572F",
+        "accent-hover": "#334827",
+        "accent-active": "#293B1F",
+        "on-accent": "#FFFFFF",
+        "focus": "#81571A",
+        "selection": "#E0E8D5",
+        "selection-text": "#304524",
+        "success": "#27623F",
+        "success-bg": "#E7F1E8",
+        "warning": "#80521A",
+        "warning-bg": "#FCEDD1",
+        "danger": "#A0332C",
+        "danger-bg": "#FBE9E5",
+        "disabled": "#E2E5DC",
+        "disabled-text": "#737B6D"
+      }
+    },
+    "dark": {
+      "tokens": {
+        "canvas": "#1D241C",
+        "surface": "#242E22",
+        "surface-alt": "#2C3729",
+        "text": "#EEF1E8",
+        "muted": "#B3BDAA",
+        "line": "#47523E",
+        "control-border": "#7E8F70",
+        "accent": "#BBD198",
+        "accent-hover": "#CDDEA9",
+        "accent-active": "#DAE7BE",
+        "on-accent": "#1E2D16",
+        "focus": "#E4B677",
+        "selection": "#3A4C2B",
+        "selection-text": "#DAE8BD",
+        "success": "#AED8B4",
+        "success-bg": "#223B2D",
+        "warning": "#F0D08E",
+        "warning-bg": "#42351D",
+        "danger": "#F4B6AC",
+        "danger-bg": "#462824",
+        "disabled": "#394331",
+        "disabled-text": "#9CA68F"
+      }
+    }
+  }
+}

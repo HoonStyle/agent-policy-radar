@@ -65,9 +65,9 @@ jobs:
           import json
           from pathlib import Path
           files = {x['path'] for x in json.loads(Path('package-report.json').read_text(encoding='utf-8'))[0]['files']}
-          required = {'plugin.json', '.claude-plugin/plugin.json', '.agents/plugins/marketplace.json', 'scripts/policy_radar.py', 'skills/agent-policy-radar/SKILL.md', 'plugins/review-workflow/skills/review-workflow/scripts/review.py'}
+          required = {'plugin.json', '.claude-plugin/plugin.json', '.agents/plugins/marketplace.json', 'scripts/policy_radar.py', 'skills/agent-policy-radar/SKILL.md', 'plugins/review-workflow/skills/review-workflow/scripts/review.py', 'README.ko.md', 'plugins/ui-design-director/plugin.json', 'plugins/ui-design-director/.claude-plugin/plugin.json', 'plugins/ui-design-director/.codex-plugin/plugin.json', 'plugins/ui-design-director/skills/design-director/SKILL.md', 'plugins/ui-design-director/skills/presentation-design/SKILL.md', 'plugins/ui-design-director/skills/document-design/SKILL.md', 'plugins/ui-design-director/skills/design-director/scripts/locales.json', 'plugins/ui-design-director/skills/design-director/scripts/specimen.html'}
           assert required <= files, required - files
-          assert not any(p.startswith(('reports/', 'data/snapshots/')) or '__pycache__' in p for p in files), 'Private/generated artifacts in package'
+          assert not any(p.startswith(('reports/', 'data/snapshots/')) or p.startswith(('plugins/ui-design-director/dist/', 'plugins/ui-design-director/artifacts/')) or '__pycache__' in p for p in files), 'Private/generated artifacts in package'
           PY
       - uses: actions/upload-artifact@v4
         if: always()

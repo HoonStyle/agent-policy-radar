@@ -8,6 +8,11 @@
   "version": "0.1.18",
   "plugins": [
     {
+      "name": "ui-design-director",
+      "source": "./plugins/ui-design-director",
+      "description": "Optional English/Korean UI, PowerPoint and Word design workflows; install separately."
+    },
+    {
       "name": "paper-research",
       "source": "./plugins/paper-research",
       "description": "Optional literature research and academic writing workflow; install separately."
