@@ -167,6 +167,34 @@
       "url": "https://code.claude.com/docs/en/changelog.md",
       "kind": "release-notes",
       "cadence": "weekly"
+    },
+    {
+      "id": "claude-haiku55-overview",
+      "label": "Claude Haiku 5.5 model reference (API limits and availability; not local rollout evidence)",
+      "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+      "kind": "model-reference",
+      "cadence": "weekly"
+    },
+    {
+      "id": "claude-haiku55-prompting",
+      "label": "Claude Haiku 5.5 prompting (observed-problem remedies; not Opus/Sonnet defaults)",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-haiku-5-5",
+      "kind": "model-specific-prompting",
+      "cadence": "weekly"
+    },
+    {
+      "id": "claude-haiku55-migration",
+      "label": "Claude Haiku 5.5 migration (Messages API; not Managed Agents or Claude Code settings)",
+      "url": "https://platform.claude.com/docs/en/models/haiku-5-5/migration-guide",
+      "kind": "api-migration",
+      "cadence": "weekly"
+    },
+    {
+      "id": "claude-haiku55-whats-new",
+      "label": "Claude Haiku 5.5 API changes (platform-specific; distinguish forced tools and thinking from Sonnet/Opus)",
+      "url": "https://platform.claude.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5",
+      "kind": "api-migration",
+      "cadence": "weekly"
     }
   ]
 }

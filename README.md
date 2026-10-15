@@ -16,7 +16,7 @@ Install only the plugins you need. Agent Policy Radar favors the host's native b
 
 | Plugin | Purpose | Version |
 | --- | --- | --- |
-| **`agent-policy-radar`** | Track official guidance and review local instruction inventories, overlap candidates, and proposed edits. | 0.1.20 |
+| **`agent-policy-radar`** | Track official guidance and review local instruction inventories, overlap candidates, and proposed edits. | 0.1.21 |
 | **`review-workflow`** | Organize review findings, fixes, and verification without an endless review loop. | 0.2.1 |
 | **`paper-research`** | Assist with literature review, research planning, analysis, and writing; includes optional nursing research references. | 0.1.1 |
 | **`ui-design-director`** | Design and review English/Korean UI, PowerPoint, and Word with shared color and typography. | 0.2.1 |
@@ -66,7 +66,7 @@ Start a **new session** after installation. Check the installed plugins with `cl
 The root Policy Radar skill is also available as a version-pinned Pi package:
 
 ```sh
-pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.20
+pi install git:github.com/HoonStyle/agent-policy-radar@v0.1.21
 ```
 
 This does not automatically register the optional plugins as Pi skills and does not imply npm publication or gallery listing.
@@ -230,9 +230,9 @@ These checks do not establish better model performance, exhaustive literature se
 
 ### Guidance tracking
 
-As of **2026-10-06**, the registry tracks official guidance for GPT-6.1 Sol, Opus 5.5, and Sonnet 5.5, while distinguishing GPT-6 Sol and 6.1 Sol API conditions and retaining older guidance as historical context. Releases do not automatically change personal instructions or reasoning effort. Registry cadence is metadata, not a scheduler.
+As of **2026-10-15**, the 28-source registry tracks official guidance for GPT-6.1 Sol, Opus 5.5, Sonnet 5.5, and Haiku 5.5, while distinguishing model-specific API conditions and retaining older guidance as historical context. Releases do not automatically change personal instructions or reasoning effort. Registry cadence is metadata, not a scheduler.
 
-See the dated [model guidance](sources/2026-10-01-model-guidance.md), [October 6 update](sources/2026-10-06-guidance-update.md), and [Claude model differences](sources/2026-09-29-opus-sonnet55-guidance.md). These records are date-specific, not a live compatibility guarantee.
+See the dated [model guidance](sources/2026-10-01-model-guidance.md), [October 6 update](sources/2026-10-06-guidance-update.md), [October 15 update](sources/2026-10-15-guidance-update.md), and [Claude model differences](sources/2026-09-29-opus-sonnet55-guidance.md). These records are date-specific, not a live compatibility guarantee.
 
 ## Feedback and development
 
