@@ -18,7 +18,7 @@ spec.loader.exec_module(palette)
 
 class PaletteTests(unittest.TestCase):
     def setUp(self):
-        self.example = SKILL / "assets/palettes/paper-olive.json"
+        self.example = ROOT / "tests/fixtures/palettes/paper-olive.json"
         self.data = json.loads(self.example.read_text(encoding="utf-8"))
 
     def load(self, data):
@@ -45,7 +45,7 @@ class PaletteTests(unittest.TestCase):
         self.assertFalse(row["passed"])
 
     def test_shipped_examples_all_themes(self):
-        for path in (SKILL / "assets/palettes").glob("*.json"):
+        for path in (ROOT / "tests/fixtures/palettes").glob("*.json"):
             with self.subTest(palette=path.name):
                 data = palette.load_palette(path)
                 report = palette.check_palette(data)

@@ -21,7 +21,7 @@ Specify roles rather than a fixed aesthetic: dominant type hierarchy, neutral fa
 
 Reuse color meaning, not every UI token. A Word memo does not need hover colors; a slide has no responsive button states. Retain document/slide templates and medium-specific accessibility rules. Do not copy a dark UI surface onto all printed pages just to match the brand.
 
-For a coordinated palette, start from the source brand or a selected family in [color-system.md](color-system.md), then inspect its actual use in each medium. Validate the colors actually used, not arbitrary proxy tokens. The optional opaque-sRGB checker accepts additional declared pairs but cannot inspect a PowerPoint theme, Word style, gradient, or exported PDF.
+For a coordinated palette, start from the source brand or a product-specific direction grounded in the audience and content; this package supplies no default color family. Use [color-system.md](color-system.md) to map roles and validate the colors actually used, then inspect their use in each medium. Preserve the same brand across its pages and artifacts without importing colors from test fixtures or unrelated previous work. The optional opaque-sRGB checker accepts additional declared pairs but cannot inspect a PowerPoint theme, Word style, gradient, or exported PDF.
 
 ## Preserve usable, editable artifacts
 

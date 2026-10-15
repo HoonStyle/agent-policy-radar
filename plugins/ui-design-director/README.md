@@ -1,4 +1,4 @@
-# Design Director · 0.2.0
+# Design Director · 0.2.1
 
 에이전트가 **한국어·영어 UI, PPT, Word**의 구조·심미성·컬러셋을 함께 다루도록 돕는 스킬형 플러그인입니다. 공통 디자인 기준을 공유하고, 매체별 설계·검수를 나눕니다. 기존 패키지 식별자 `ui-design-director`는 유지합니다. 문서 생성·렌더링 엔진은 포함하지 않습니다.
 
@@ -71,16 +71,19 @@ OpenClaw가 portable bundle을 지원하므로 별도 `openclaw.plugin.json`이�
 
 ## 컬러셋 도구 실행
 
-Python 3.9 이상, 추가 의존성 없음. 아래 명령은 플러그인 루트에서 실행합니다.
+Python 3.9 이상, 추가 의존성 없음. 아래 명령은 플러그인 루트에서 실행합니다. **기본 제품 팔레트는 없습니다.** 기존 브랜드를 우선하고, 새 제품이라면 사용자 방향·실제 콘텐츠·이미지·원하는 인상에 근거해 색상을 정합니다. 같은 제품의 새 페이지에서는 기존 색상 체계를 유지합니다.
+
+선택한 색상을 프로젝트의 JSON으로 작성하거나 내보낸 후 아래 프로젝트 경로를 실제 파일로 바꾸세요. `roles`로 필요한 역할을 확인할 수 있으며, 도구는 색상을 대신 선택하지 않습니다.
 
 ```bash
-python3 skills/design-director/scripts/palette.py check skills/design-director/assets/palettes/paper-olive.json
-python3 skills/design-director/scripts/palette.py css skills/design-director/assets/palettes/paper-olive.json --theme light
-python3 skills/design-director/scripts/palette.py preview skills/design-director/assets/palettes/paper-olive.json --output /tmp/paper-olive.html
-python3 skills/design-director/scripts/palette.py preview skills/design-director/assets/palettes/paper-olive.json --lang en --output /tmp/paper-olive-en.html
+python3 skills/design-director/scripts/palette.py roles
+python3 skills/design-director/scripts/palette.py check /absolute/path/to/project/design/palette.json
+python3 skills/design-director/scripts/palette.py css /absolute/path/to/project/design/palette.json --theme light
+python3 skills/design-director/scripts/palette.py preview /absolute/path/to/project/design/palette.json --output /tmp/project-color-review.html
+python3 skills/design-director/scripts/palette.py preview /absolute/path/to/project/design/palette.json --lang en --output /tmp/project-color-review-en.html
 ```
 
-`mineral-violet.json`도 같은 방법으로 사용할 수 있습니다. 두 예시는 제품별 팔레트를 설계하는 출발 자료이지 공통 기본 테마가 아닙니다. 출력 파일이 있으면 덮어쓰지 않으며, 필요할 때만 `--force`를 사용합니다.
+테스트 팔레트는 `tests/fixtures/palettes/`에 격리되어 있으며 제품 디자인의 시작 파일이 아닙니다. 특정 색 자체를 금지하지는 않으며 사용자 지정색과 기존 브랜드를 존중합니다. 출력 파일이 있으면 덮어쓰지 않으며, 필요할 때만 `--force`를 사용합니다.
 
 `--lang ko|en`은 첫 화면 언어를 지정합니다(기본 `ko`). 생성된 HTML 안에서는 두 언어를 전환할 수 있습니다. 예제 날짜·숫자 표기는 `ko-KR`/`en-US`를 사용하며 실제 제품의 지역 규칙을 대신 정하는 것은 아닙니다.
 
@@ -98,7 +101,7 @@ python3 -m unittest discover -s tests -v
 python3 scripts/package.py
 ```
 
-선택적 브라우저 검증은 기존 Playwright와 Google Chrome을 사용합니다. `artifacts/`에 `paper-olive.html`, `mineral-violet.html` 및 `paper-olive-en.html`을 생성한 뒤 아래 명령을 실행합니다. 브라우저 검증을 위해 패키지가 의존성을 자동 설치하지 않습니다.
+선택적 브라우저 검증은 기존 Playwright와 Google Chrome을 사용합니다. 회귀 검증에만 `tests/fixtures/palettes/`의 두 JSON을 입력으로 사용해 `artifacts/`에 `paper-olive.html`, `mineral-violet.html` 및 `paper-olive-en.html`을 생성한 뒤 아래 명령을 실행합니다. 이 검증용 색상은 제품 기본값이 아닙니다. 브라우저 검증을 위해 패키지가 의존성을 자동 설치하지 않습니다.
 
 ```bash
 DESIGN_PLAYWRIGHT_PATH=/absolute/path/to/playwright-core node tests/check-preview.cjs

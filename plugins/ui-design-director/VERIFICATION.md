@@ -1,4 +1,16 @@
-# Verification · 0.2.0
+# Verification
+
+## 0.2.1 palette guidance correction — 2026-10-15
+
+- User-reported issue: newly created pages repeatedly used the two bundled palette families. Source inspection found normal command examples selecting one fixture, an instruction to use a complete bundled palette as a starting file, and shared guidance to select a bundled family. This is evidence of an instruction-level anchoring risk, not a traced explanation of every prior generated page.
+- Removed fixture selection from the normal design workflow. The entrypoint now establishes project-specific color decisions while preserving existing product identity and explicit user color choices. Shared UI/slide/document guidance uses the same rule; no hue is banned and no per-page palette rotation is required.
+- Moved the two palette JSON files unchanged from skill assets to `tests/fixtures/palettes/`; updated their test callers. Palette checking and rendering implementation is unchanged.
+- Repository offline tests: 45/45 passed, including the 18 palette/CLI cases and two design-package boundary cases. Skill Creator validation for the edited `design-director` entrypoint passed. `git diff --check` passed.
+- Added behavioral evaluation cases for a new identity, an existing brand, and an explicit olive/violet direction. These cases are not executed agent trials. Real page-generation diversity and aesthetic improvement remain unverified; structural/test success does not prove the reported repetition is resolved.
+- The initial correction was validated as a local candidate without installation or publication. Subsequent approved installation checks confirmed Claude/Codex recognition on macOS and Windows; installation recognition is not proof of active-session adoption or improved design behavior. No forced hot reload, restart, or existing product-page change was performed.
+- Marketplace release v0.1.20 includes this correction and is published by GitHub Actions only after the tag's cross-platform and package checks pass. Release publication does not install or reload local bundles. Browser results below remain historical 0.2.0 evidence, not a new browser run.
+
+## 0.2.0 verification — historical
 
 검증일: 2026-10-08. 실행 호스트: Mac Studio, Darwin arm64. Python 3.9.6, Node.js 22.20.0, 기존 Playwright Core와 Google Chrome을 사용했습니다. 설치·게시·개발서버·watcher·핫리로드는 실행하지 않았습니다. 이전 v0.1.0 ZIP은 그대로 보존했습니다.
 

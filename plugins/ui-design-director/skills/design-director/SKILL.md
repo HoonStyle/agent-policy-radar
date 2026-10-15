@@ -27,6 +27,8 @@ End this step knowing what may change, what must stay, and the main user action.
 
 ## 2. Establish a visual decision, not a template
 
+This package has no default product palette. Choose colors from the user's direction, existing brand tokens, real content/imagery, and the intended visual character—not from bundled test fixtures or an unrelated previous task. Keep new pages of the same product consistent with its established palette; do not rotate colors merely to make pages different. For a new identity, record the brief reason for the chosen color roles before implementation.
+
 For substantial work, write a compact direction beside existing project design notes: task-led structure, visual focal point, type hierarchy, color roles and relative emphasis, image treatment if relevant, and interaction character. Use [brief-and-review.md](assets/brief-and-review.md) only when an artifact helps continuity; fill or remove its fields.
 
 Compare structures, not recolorings. A record comparison may need a table; focused editing may need a split view; a reading experience may need editorial rhythm. These are task hypotheses, not industry-to-style rules. Preserve a good existing composition when the problem is local.

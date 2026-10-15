@@ -9,14 +9,14 @@ const root = path.resolve(__dirname, '..');
 
 (async () => {
   const out = path.join(root, 'artifacts');
-  const screenshots = path.join(out, 'screenshots-v0.2.0');
+  const screenshots = path.join(out, 'screenshots-v0.2.1');
   fs.mkdirSync(screenshots, { recursive: true });
   const browser = await chromium.launch({ channel: 'chrome', headless: true });
   const results = [];
   const errors = [];
   try {
     for (const family of ['paper-olive', 'mineral-violet']) {
-      const data = JSON.parse(fs.readFileSync(path.join(root, 'skills/design-director/assets/palettes', family + '.json')));
+      const data = JSON.parse(fs.readFileSync(path.join(root, 'tests/fixtures/palettes', family + '.json')));
       for (const width of [1280, 390, 320]) {
         const page = await browser.newPage({ viewport: { width, height: 1000 }, reducedMotion: 'reduce' });
         page.on('pageerror', error => errors.push(String(error)));
@@ -115,7 +115,7 @@ const root = path.resolve(__dirname, '..');
     assert(await staticEnglish.getByRole('button', { name: 'Select item', exact: true }).isVisible());
     assert.equal(await staticEnglish.locator('#language').inputValue(), 'en');
     await staticEnglish.close();
-    fs.writeFileSync(path.join(out, 'browser-results-v0.2.0.json'), JSON.stringify({ browser: browser.version(), cases: results, staticEnglish:'pass', errors }, null, 2));
+    fs.writeFileSync(path.join(out, 'browser-results-v0.2.1.json'), JSON.stringify({ browser: browser.version(), cases: results, staticEnglish:'pass', errors }, null, 2));
     console.log(JSON.stringify({ casesPassed: results.length, screenshots: results.length, errors }, null, 2));
   } finally {
     await browser.close();
