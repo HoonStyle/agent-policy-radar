@@ -1,6 +1,6 @@
 ---
 name: agent-policy-radar
-description: Review model/harness prompt guidance and local instruction hygiene. Use when the user asks to run policy radar, check Claude/Codex model changes against AGENTS.md/CLAUDE.md, scan global/project/skill/MCP instruction overlap, or generate approval-gated policy recommendations.
+description: Review model/harness prompt guidance and local instruction hygiene. Use when the user asks to run policy radar, check Claude/Codex model changes against AGENTS.md/CLAUDE.md, review TypeSafe/Jev decision guidance, scan global/project/skill/MCP instruction overlap, or generate approval-gated policy recommendations.
 ---
 
 # Agent Policy Radar
@@ -87,6 +87,12 @@ Lead the report with a concrete decision and scope: policy/criteria update, sour
 For findings that depend on Claude Code instruction loading, distinguish files found on disk from files loaded into the session. Check only the relevant loading conditions in the current [memory reference](https://code.claude.com/docs/en/memory), using `/context` or available session evidence rather than inventory alone. Read/Write/Edit and read-like Bash commands recognized by the current harness (for example, `cat` or `head` on one file without pipes or redirects) may trigger on-demand loading; missing Read history alone does not prove non-loading. Check the current [tool reference](https://code.claude.com/docs/en/tools-reference#edit-tool-behavior) and relevant version/session evidence rather than treating every shell read as a loading trigger. Check session-specific auto-memory behavior only for auto-memory findings. A file not loaded in the current session is not evidence of duplicate loading there; assess its actual usage before proposing removal. Do not transfer Claude-specific conditions to other harnesses.
 
 For Claude Code prompt audits, suggest the built-in `/doctor prompt-audit <path>` where available, or reuse an existing relevant result before duplicating work. Consult the current memory reference for availability and prerequisites rather than fixing version details here. Any execution remains subject to the authorized target scope and existing data/cost permissions; otherwise continue with local inspection. Verify findings as candidates, not automatic edit approval. An additional audit or model call is not required.
+
+## TypeSafe / Jev reviews
+
+For Jev work, read [the targeted review reference](references/typesafe-jev.md). Jev is a typed-decision API, not a replacement for the model or instruction loader behind a coding agent. Review the authorized integration's actual `state`, question `instructions`/`criteria`, returned values, and consuming code. A Markdown inventory alone does not cover those inputs; name inaccessible targets instead of declaring them correct.
+
+Reuse the [official TypeSafe skill](https://docs.typesafe.ai/agent-skill) for implementation when available. Radar tracks and reviews its guidance; it does not bundle or automatically install that external skill. Apply Jev checks only to relevant integrations, preserve ordinary Claude/Codex reviews, and distinguish documented contract corrections from unmeasured behavior improvements.
 
 ## Prompt cleanup (explicit request)
 

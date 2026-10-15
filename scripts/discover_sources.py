@@ -15,9 +15,12 @@ INDEXES = [
     'https://platform.claude.com/llms.txt',
     'https://developers.openai.com/llms.txt',
     'https://learn.chatgpt.com/llms.txt',
+    'https://docs.typesafe.ai/llms.txt',
 ]
-HOSTS = {'code.claude.com', 'platform.claude.com', 'developers.openai.com', 'learn.chatgpt.com'}
+HOSTS = {'code.claude.com', 'platform.claude.com', 'developers.openai.com', 'learn.chatgpt.com',
+         'docs.typesafe.ai'}
 TERMS = re.compile(r'prompt|migrat|release|changelog|model|instruction|agents\.md|claude\.md', re.I)
+TYPESAFE_TERMS = re.compile(r'\bjev\b|system.one|\bprimitives?\b|\bconfidence\b|\bstate\b|agent.skill', re.I)
 LIMIT = 5_000_000
 
 
@@ -55,7 +58,10 @@ def candidates(text, base):
                 valid = allowed(url)
             except ValueError:
                 valid = False
-            if valid and TERMS.search(title + ' ' + url):
+            relevant = TERMS.search(title + ' ' + url)
+            if valid and urllib.parse.urlsplit(url).hostname == 'docs.typesafe.ai':
+                relevant = relevant or TYPESAFE_TERMS.search(title + ' ' + url)
+            if valid and relevant:
                 found.setdefault(url, {'url': url, 'title': title, 'index_url': base, 'line': number,
                                        'evidence': line, 'verified': False})
     return list(found.values())

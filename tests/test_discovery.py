@@ -9,6 +9,26 @@ import discover_sources as d
 
 
 class DiscoveryTests(unittest.TestCase):
+    def test_typesafe_guidance_without_generic_model_keywords(self):
+        index = 'https://docs.typesafe.ai/llms.txt'
+        self.assertIn(index, d.INDEXES)
+        text = ('[State](/concepts/state.md)\n'
+                '[Primitives (Questions)](/primitives.md)\n'
+                '[Confidence](/confidence.md)\n'
+                '[Agent skill](/agent-skill.md)\n'
+                '[Confidence](https://docs.typesafe.ai.evil.example/confidence)\n'
+                '[Confidence](https://docs.typesafe.ai@evil.example/confidence)\n'
+                '[Confidence](https://docs.typesafe.ai:444/confidence)\n'
+                '[Legal](/legal.md)')
+        result = d.candidates(text, index)
+        self.assertEqual({r['title'] for r in result},
+                         {'State', 'Primitives (Questions)', 'Confidence', 'Agent skill'})
+        self.assertTrue(all(not r['verified'] for r in result))
+
+    def test_typesafe_terms_do_not_broaden_other_provider_matching(self):
+        self.assertEqual(d.candidates('[State](/state)\n[Confidence](/confidence)',
+                                      d.INDEXES[0]), [])
+
     def test_links_and_boundaries(self):
         text = '[Model migration](/docs/migration)\n[Model migration](/docs/migration#x)\n[Prompt](https://evil.example/a)\n[Prompt](https://code.claude.com@evil.example/a)\n[Home](/home)'
         result = d.candidates(text, d.INDEXES[0])

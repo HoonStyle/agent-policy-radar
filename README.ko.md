@@ -111,6 +111,8 @@ Claude Code에서는 `/agent-policy-radar:agent-policy-radar`, Codex에서는 �
 
 개인 선호·의도를 보존하고, 중복·길이·일반 권장사항만으로 변경을 권고하지 않습니다. 관련 없는 파일이나 전체 대화 기록으로 점검 범위를 확대하지 않습니다.
 
+**TypeSafe/Jev**의 공식 모델·API·판정 설계 문서도 추적하며, [전용 검토 기준](skills/agent-policy-radar/references/typesafe-jev.md)을 제공합니다. Markdown 지침뿐 아니라 실제 요청 구성과 결과를 소비하는 코드를 대조합니다. Jev는 코딩 에이전트의 LLM이 아닙니다. 구현에는 별도로 관리되는 [공식 TypeSafe 스킬](https://docs.typesafe.ai/agent-skill)을 재사용하며, Radar가 이를 번들하거나 자동 설치하지 않습니다. 문서 확인은 추론 API를 호출하지 않습니다.
+
 ### 2. Review Workflow — 개발 리뷰
 
 Claude Code: `/review-workflow:review-workflow`

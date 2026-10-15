@@ -89,6 +89,8 @@ The workflow discovers candidate documentation links, checks registered sources,
 
 Overlap candidates are not confirmed defects. Semantic conflicts and model-performance improvements require further review; length or repetition alone is not sufficient reason to change an instruction. Unrelated files and complete conversation histories are outside the requested audit scope.
 
+For **TypeSafe/Jev**, Radar also tracks official model/API and decision-design guidance and provides a [targeted review reference](skills/agent-policy-radar/references/typesafe-jev.md). Review actual request construction and consuming code, not just Markdown instructions. Jev is not a coding-agent LLM. For implementation, reuse the separately maintained [official TypeSafe skill](https://docs.typesafe.ai/agent-skill); Radar does not bundle or install it. Documentation checks do not call the inference API.
+
 ### Review Workflow: development reviews
 
 Claude Code: `/review-workflow:review-workflow`. In Codex, request the installed Review Workflow skill.

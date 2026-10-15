@@ -195,6 +195,62 @@
       "url": "https://platform.claude.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5",
       "kind": "api-migration",
       "cadence": "weekly"
+    },
+    {
+      "id": "typesafe-jev-coding-agents",
+      "label": "Jev with coding agents (typed-decision API; not a coding-agent model replacement)",
+      "url": "https://docs.typesafe.ai/introduction/coding-agents",
+      "kind": "api-integration-guidance",
+      "cadence": "weekly"
+    },
+    {
+      "id": "typesafe-jev-models",
+      "label": "Jev models (version/alias, language and context limits; not workload validation)",
+      "url": "https://docs.typesafe.ai/models",
+      "kind": "model-reference",
+      "cadence": "weekly"
+    },
+    {
+      "id": "typesafe-state",
+      "label": "TypeSafe state (evidence and relationships supplied to each evaluation)",
+      "url": "https://docs.typesafe.ai/concepts/state",
+      "kind": "api-integration-guidance",
+      "cadence": "weekly"
+    },
+    {
+      "id": "typesafe-primitives",
+      "label": "TypeSafe question design (instructions, criteria and independent judgments)",
+      "url": "https://docs.typesafe.ai/primitives",
+      "kind": "model-specific-prompting",
+      "cadence": "weekly"
+    },
+    {
+      "id": "typesafe-confidence",
+      "label": "TypeSafe uncertainty (probabilities versus confidence; workload-specific thresholds)",
+      "url": "https://docs.typesafe.ai/confidence",
+      "kind": "api-integration-guidance",
+      "cadence": "weekly"
+    },
+    {
+      "id": "typesafe-api",
+      "label": "TypeSafe HTTP API (current request/response contracts and errors)",
+      "url": "https://docs.typesafe.ai/api",
+      "kind": "api-reference",
+      "cadence": "weekly"
+    },
+    {
+      "id": "typesafe-agent-skill",
+      "label": "Official TypeSafe agent skill (separate optional installation; not bundled with Radar)",
+      "url": "https://docs.typesafe.ai/agent-skill",
+      "kind": "skill-guidance",
+      "cadence": "weekly"
+    },
+    {
+      "id": "typesafe-building-guide",
+      "label": "Building with TypeSafe (structured judgments composed by application code)",
+      "url": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
+      "kind": "api-integration-guidance",
+      "cadence": "weekly"
     }
   ]
 }

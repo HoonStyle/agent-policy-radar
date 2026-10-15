@@ -12,7 +12,8 @@ class RegistryTests(unittest.TestCase):
         self.assertEqual(len(sources), len({s['id'] for s in sources}))
         self.assertEqual(len(sources), len({s['url'] for s in sources}))
         hosts = {'platform.claude.com', 'code.claude.com', 'developers.openai.com',
-                 'cookbook.openai.com', 'learn.chatgpt.com', 'modelcontextprotocol.io'}
+                 'cookbook.openai.com', 'learn.chatgpt.com', 'modelcontextprotocol.io',
+                 'docs.typesafe.ai'}
         for source in sources:
             url = urlsplit(source['url'])
             self.assertEqual(url.scheme, 'https')
@@ -26,3 +27,12 @@ class RegistryTests(unittest.TestCase):
                     'openai-gpt6-luna', 'openai-gpt61-sol', 'openai-codex-models'}
         self.assertTrue(required <= sources.keys())
         self.assertIn('Historical reference', sources['openai-gpt5-prompting-guide']['label'])
+
+    def test_jev_contract_and_review_sources(self):
+        sources = {s['id']: s for s in json.loads((ROOT / 'data/source_registry.json').read_text(encoding='utf-8'))['sources']}
+        required = {'typesafe-jev-coding-agents', 'typesafe-jev-models', 'typesafe-state',
+                    'typesafe-primitives', 'typesafe-confidence', 'typesafe-api',
+                    'typesafe-agent-skill', 'typesafe-building-guide'}
+        self.assertTrue(required <= sources.keys())
+        for source_id in required:
+            self.assertEqual(urlsplit(sources[source_id]['url']).hostname, 'docs.typesafe.ai')
