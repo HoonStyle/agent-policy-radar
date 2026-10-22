@@ -233,8 +233,8 @@
     },
     {
       "id": "typesafe-api",
-      "label": "TypeSafe HTTP API (current request/response contracts and errors)",
-      "url": "https://docs.typesafe.ai/api",
+      "label": "TypeSafe System One HTTP contract (model capability and access must be checked separately)",
+      "url": "https://docs.typesafe.ai/api/system-one.md",
       "kind": "api-reference",
       "cadence": "weekly"
     },
@@ -250,6 +250,27 @@
       "label": "Building with TypeSafe (structured judgments composed by application code)",
       "url": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
       "kind": "api-integration-guidance",
+      "cadence": "weekly"
+    },
+    {
+      "id": "anthropic-api-20261021-migration",
+      "label": "Claude API 2026-10-21 and SDK major-version migration (API contract and SDK behavior have separate applicability)",
+      "url": "https://platform.claude.com/docs/en/api/migration-2026-10-21.md",
+      "kind": "api-migration",
+      "cadence": "weekly"
+    },
+    {
+      "id": "typesafe-models-api",
+      "label": "TypeSafe List models HTTP contract (account-visible names; not an exhaustive capability declaration)",
+      "url": "https://docs.typesafe.ai/api/list-models.md",
+      "kind": "api-reference",
+      "cadence": "weekly"
+    },
+    {
+      "id": "typesafe-request-errors",
+      "label": "TypeSafe request rules and errors (limits, compression, status codes and default SDK retries)",
+      "url": "https://docs.typesafe.ai/api/errors.md",
+      "kind": "api-reference",
       "cadence": "weekly"
     }
   ]

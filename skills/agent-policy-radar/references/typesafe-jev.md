@@ -10,7 +10,7 @@ when building with Jev; keep its upstream maintenance separate from Radar.
 
 - **Surface and version.** Establish the actual SDK/HTTP API, requested model and
   returned model ID. Jev does not load `AGENTS.md` or replace a coding agent's LLM.
-  Read [models](https://docs.typesafe.ai/models) and the [API contract](https://docs.typesafe.ai/api).
+  Read [models](https://docs.typesafe.ai/models) and the [API contract](https://docs.typesafe.ai/api/system-one).
   Moving aliases and pinned versions have different reproducibility properties;
   do not upgrade either automatically. Recheck relevant language, modality and
   per-request/per-question limits for the selected model. Do not infer capability
