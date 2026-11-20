@@ -1,6 +1,20 @@
 {
   "sources": [
     {
+      "id": "openai-gpt62-astra",
+      "label": "GPT-6.2 Astra model reference (API contract; local availability unverified)",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra.md",
+      "kind": "model-reference",
+      "cadence": "weekly"
+    },
+    {
+      "id": "openai-gpt62-sol",
+      "label": "GPT-6.2 Sol model reference (API contract; local availability unverified)",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol.md",
+      "kind": "model-reference",
+      "cadence": "weekly"
+    },
+    {
       "id": "anthropic-release-notes",
       "label": "Claude Platform release notes (API/platform; not CLI behavior validation)",
       "url": "https://platform.claude.com/docs/en/release-notes/overview.md",
@@ -58,7 +72,7 @@
     },
     {
       "id": "openai-latest-model",
-      "label": "OpenAI latest-model guide (rolling; verified 2026-10-01: GPT-6 Astra/GPT-6.1 Sol/GPT-6 Luna; prompting observations based on Astra)",
+      "label": "OpenAI latest-model guide (rolling; verified 2026-11-20: GPT-6.2 Astra/Sol; prompting examples address both models)",
       "url": "https://developers.openai.com/api/docs/guides/latest-model.md",
       "kind": "model-prompting",
       "cadence": "weekly"
@@ -271,6 +285,27 @@
       "label": "TypeSafe request rules and errors (limits, compression, status codes and default SDK retries)",
       "url": "https://docs.typesafe.ai/api/errors.md",
       "kind": "api-reference",
+      "cadence": "weekly"
+    },
+    {
+      "id": "claude-fable52-prompting",
+      "label": "Claude Fable/Mythos 5.2 prompting; behavioral changes require observed local need",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2.md",
+      "kind": "model-specific-prompting",
+      "cadence": "weekly"
+    },
+    {
+      "id": "claude-fable52-migration",
+      "label": "Claude Fable/Mythos 5.2 Messages API migration; not automatic Claude Code or Managed Agents changes",
+      "url": "https://platform.claude.com/docs/en/models/fable-5-2/migration-guide.md",
+      "kind": "api-migration",
+      "cadence": "weekly"
+    },
+    {
+      "id": "openai-gpt61-terra",
+      "label": "GPT-6.1 Terra API reference; not proof of local access or performance",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra.md",
+      "kind": "model-reference",
       "cadence": "weekly"
     }
   ]

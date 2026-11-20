@@ -28,6 +28,19 @@ class RegistryTests(unittest.TestCase):
         self.assertTrue(required <= sources.keys())
         self.assertIn('Historical reference', sources['openai-gpt5-prompting-guide']['label'])
 
+    def test_gpt62_and_fable52_review_sources(self):
+        sources = {s['id']: s for s in json.loads((ROOT / 'data/source_registry.json').read_text(encoding='utf-8'))['sources']}
+        required = {'openai-gpt62-astra', 'openai-gpt62-sol',
+                    'claude-fable52-prompting', 'claude-fable52-migration'}
+        self.assertTrue(required <= sources.keys())
+        self.assertIn('GPT-6.2 Astra/Sol', sources['openai-latest-model']['label'])
+        skill = ROOT / 'skills/agent-policy-radar/SKILL.md'
+        reference = skill.parent / 'references/model-transitions.md'
+        self.assertTrue(reference.is_file())
+        self.assertIn('references/model-transitions.md', skill.read_text(encoding='utf-8'))
+        for source_id in required:
+            self.assertIn(sources[source_id]['url'], reference.read_text(encoding='utf-8'))
+
     def test_jev_contract_and_review_sources(self):
         sources = {s['id']: s for s in json.loads((ROOT / 'data/source_registry.json').read_text(encoding='utf-8'))['sources']}
         required = {'typesafe-jev-coding-agents', 'typesafe-jev-models', 'typesafe-state',

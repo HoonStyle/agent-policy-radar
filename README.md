@@ -232,7 +232,7 @@ These checks do not establish better model performance, exhaustive literature se
 
 ### Guidance tracking
 
-As of **2026-10-23**, the 39-source registry tracks official guidance for GPT-6.1 Sol, Opus 5.5, Sonnet 5.5, Haiku 5.5, and TypeSafe/Jev, including Claude API-version migration and separate TypeSafe endpoint/error contracts, while distinguishing model-specific API conditions and retaining older guidance as historical context. Releases do not automatically change personal instructions or reasoning effort. Registry cadence is metadata, not a scheduler.
+As of **2026-11-20**, the 44-source registry also tracks GPT-6.2 Astra/Sol, Claude Fable/Mythos 5.2, and GPT-6.1 Terra alongside earlier model and TypeSafe/Jev guidance. The [model-transition review reference](skills/agent-policy-radar/references/model-transitions.md) distinguishes direct API compatibility, managed harnesses, and behavioral remedies that need local evidence. Releases do not automatically change personal instructions or reasoning effort. Registry cadence is metadata, not a scheduler.
 
 See the dated [model guidance](sources/2026-10-01-model-guidance.md), [October 6 update](sources/2026-10-06-guidance-update.md), [October 15 update](sources/2026-10-15-guidance-update.md), [October 23 source maintenance](sources/2026-10-23-api-source-maintenance.md), and [Claude model differences](sources/2026-09-29-opus-sonnet55-guidance.md). These records are date-specific, not a live compatibility guarantee.
 

@@ -247,7 +247,7 @@ python3 scripts/policy_radar.py review "path/to/CLAUDE.md" --proposal "path/to/d
 - 커스텀 대상은 `data/instruction_targets.json`에서 확인합니다. 설치 캐시를 직접 수정하면 업데이트 때 사라질 수 있으므로 사용자 관리 checkout에서 설정하거나 upstream 개선을 제안하세요. 범용 외부 설정 파일 지원은 아직 없습니다.
 - **MCP 설정 분석은 현재 제외**됩니다. 설정값을 원문으로 수집하지 않으며, 복원 여부는 별도로 결정합니다.
 - `discover`는 공식 링크 후보를 찾을 뿐 본문을 검증하거나 registry에 자동 등록하지 않습니다. ‘최초 발견’은 ‘새로 출판됨’을 뜻하지 않습니다.
-- 2026-10-23 기준 추적 대상 39개에는 Opus/Sonnet/Haiku 5.5 prompting/migration, GPT-6 통합 가이드·Sol/6.1 Sol/Luna 모델 문서, 양사 릴리즈 노트 및 Codex 모델 안내, TypeSafe/Jev 지침이 포함됩니다. Claude API 버전 이행과 분리된 TypeSafe 엔드포인트·오류 계약도 추적합니다. [이번 소스 정비](sources/2026-10-23-api-source-maintenance.md)를 참고하세요. GPT-5 가이드는 과거 참고 자료로 구분합니다. API 변경과 하네스 지침을 구분하고, Astra 관측 기반 권고를 Sol/Luna에서 검증된 행동으로 간주하지 않습니다. `cadence`는 참고 메타데이터이며 스케줄러가 아닙니다. 사이트가 403 등으로 조회를 거부하면 실패로 보고하며 등록 자체가 조회 성공을 보장하지 않습니다.
+- 2026-11-20 기준 추적 대상은 44개입니다. 기존 모델·TypeSafe/Jev 안내에 GPT-6.2 Astra/Sol, Claude Fable/Mythos 5.2, GPT-6.1 Terra 공식 출처를 반영했습니다. [모델 전환 검토 참고 문서](skills/agent-policy-radar/references/model-transitions.md)는 직접 API 호환성·관리형 하네스·로컬 증거가 필요한 행동 보완을 구분합니다. GPT-5 가이드는 과거 참고 자료로 유지하며, 특정 모델의 관측을 다른 모델의 실측 결과로 일반화하지 않습니다. `cadence`는 참고 메타데이터이며 스케줄러가 아닙니다. 사이트가 403 등으로 조회를 거부하면 실패로 보고하며 등록 자체가 조회 성공을 보장하지 않습니다.
 - `sources`의 변경은 저장된 snapshot 대비 변화입니다. 설치 패키지의 과거 기준선과 달라진 것일 수도 있습니다.
 - 문서 확인은 명시 실행형입니다. 정기 실행·새 모델 감지 알림·백그라운드 자동 최적화는 없습니다.
 
